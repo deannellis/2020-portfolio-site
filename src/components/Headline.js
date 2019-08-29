@@ -4,12 +4,17 @@ import styled from "styled-components"
 
 const HeadlineWrap = styled.div`
   display: flex;
-  height: 800px;
+  height: calc(100vh - 100px);
   width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   perspective: 200vmin;
   text-align: center;
+  h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+  }
 `
 
 const HeadlineText = styled.h1.attrs(props => ({
@@ -20,7 +25,7 @@ const HeadlineText = styled.h1.attrs(props => ({
 }))`
   font-size: 180px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  transform: rotateX(20deg);
+  /* transform: rotateX(20deg); */
   position: relative;
   color: magenta;
   background-blend-mode: screen;
@@ -77,7 +82,7 @@ class Headline extends Component {
     const aX = 0 - bX
     const aY = 0 - bY
     let timedOut = false
-    const wait = 250
+    const wait = 100
     if (this.state.mouseX == undefined || this.state.mouseY == undefined) {
       this.setState({
         mouseX: x,
@@ -94,18 +99,6 @@ class Headline extends Component {
           timedOut = false
         }, wait)
       }
-      // if (x > this.state.mouseX + diff || x < this.state.mouseX - diff) {
-      //   this.setState({ cyanX: `${aX}%` })
-      //   this.setState({ yellowX: `${bX}%` })
-      // }
-      // if (y > this.state.mouseY + diff || y < this.state.mouseY - diff) {
-      //   this.setState({ cyanY: `${aY}%` })
-      //   this.setState({ yellowY: `${bY}%` })
-      // }
-      // this.setState({ cyanX: `${aX}%` })
-      // this.setState({ yellowX: `${bX}%` })
-      // this.setState({ cyanY: `${aY}%` })
-      // this.setState({ yellowY: `${bY}%` })
     }
   }
 
@@ -125,6 +118,7 @@ class Headline extends Component {
   render() {
     return (
       <HeadlineWrap onMouseMove={this.move}>
+        <h1>Hi, I'm</h1> 
         <HeadlineText
           cyanX={this.state.cyanX}
           cyanY={this.state.cyanY}
@@ -134,6 +128,7 @@ class Headline extends Component {
         >
           DEAN NELLIS
         </HeadlineText>
+        <p>a graphic designer, turned front-end developer</p>
       </HeadlineWrap>
     )
   }
