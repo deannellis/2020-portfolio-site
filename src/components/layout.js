@@ -7,9 +7,12 @@ import { Controller, Scene } from 'react-scrollmagic';
 
 const globalTheme = {
   magenta: '#F244C4',
+  magentaOpacity60: 'rgba(242, 68, 196, .6)',
   cyan: '#05AFF2',
   cyanLight: '#2EF2F2',
+  cyanLightOpacity60: 'rgba(46, 242, 242, .6)',
   yellow: '#F29F05',
+  yellowOpacity60: 'rgba(242, 159, 5, .6)',
   yellowLight: '#F2CB05',
   offWhite: '#F2F2F2',
   fadeInTrans: 'cubic-bezier(.25,.8,.25,1)',
