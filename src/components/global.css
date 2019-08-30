@@ -15,3 +15,11 @@ body {
   padding-bottom: 6rem; /* Height of Footer */
   min-height: 100%;
 }
+
+.not-scrolled>header>h2 {
+  opacity: 0;
+}
+
+.not-scrolled>header {
+  box-shadow: none;
+}

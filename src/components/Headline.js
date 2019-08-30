@@ -63,7 +63,6 @@ class Headline extends Component {
       cyanY: 1,
       yellowX: 1,
       yellowY: 1,
-      title: "DEAN NELLIS",
       mouseX: undefined,
       mouseY: undefined,
     }
@@ -124,7 +123,6 @@ class Headline extends Component {
           cyanY={this.state.cyanY}
           yellowX={this.state.yellowX}
           yellowY={this.state.yellowY}
-          title={this.state.title}
         >
           DEAN NELLIS
         </HeadlineText>
