@@ -1,9 +1,9 @@
-import { Link } from "gatsby"
-import React from "react"
-import styled from "styled-components"
-import placeholderImage1 from "../images/nordwood-themes-ubIWo074QlU-unsplash.jpg"
-import placeholderImage2 from "../images/jose-alejandro-cuffia-_4815u_ACqQ-unsplash.jpg"
-import placeholderImage3 from "../images/boxed-water-is-better-IG4hajNkbvM-unsplash.jpg"
+import { Link } from "gatsby";
+import React from "react";
+import styled from "styled-components";
+import placeholderImage1 from "../images/nordwood-themes-ubIWo074QlU-unsplash.jpg";
+import placeholderImage2 from "../images/jose-alejandro-cuffia-_4815u_ACqQ-unsplash.jpg";
+import placeholderImage3 from "../images/boxed-water-is-better-IG4hajNkbvM-unsplash.jpg";
 
 const CardsWrapper = styled.section`
   background: ${props => props.theme.offWhite};
@@ -15,7 +15,7 @@ const CardsWrapper = styled.section`
     grid-gap: 32px;
     grid-template-columns: 1fr 1fr 1fr;
   }
-`
+`;
 
 const Card = styled(Link)`
   background: #fff;
@@ -64,7 +64,7 @@ const Card = styled(Link)`
       background: ${props => props.theme.yellowOpacity60};
     }
   }
-`
+`;
 
 const projectData = [
   {
@@ -112,12 +112,12 @@ const projectData = [
     image: placeholderImage3,
     path: "/",
   },
-]
+];
 
 const Cards = () => {
   return (
     <CardsWrapper style={{ minHeight: "700px" }}>
-      <div className="cards">
+      <div className="cards" id="work">
         {projectData.map(project => (
           <Card title={project.title} to={project.path}>
             <img src={project.image} alt={project.title} />
@@ -125,7 +125,7 @@ const Cards = () => {
         ))}
       </div>
     </CardsWrapper>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;
