@@ -12,14 +12,14 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 6rem; /* Height of Footer */
+  padding-bottom: 4rem; /* Height of Footer */
   min-height: 100%;
 }
 
-.not-scrolled>header>h2 {
+.not-scrolled > header > h2 {
   opacity: 0;
 }
 
-.not-scrolled>header {
+.not-scrolled > header {
   box-shadow: none;
 }

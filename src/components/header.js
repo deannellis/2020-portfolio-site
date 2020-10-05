@@ -19,7 +19,7 @@ const HeaderWrapper = styled.header`
     text-shadow: none;
   }
   padding: 8px 36px;
-  box-shadow: ${props => props.theme.materialShadow2};
+  box-shadow: ${props => props.theme.headerShadow};
   transition: all 1s;
   transition-timing-function: ${props => props.theme.fadeInTrans};
   background: #fff;
@@ -31,7 +31,7 @@ const HeaderTitle = styled.h2`
   transition: all 1s;
   transition-timing-function: ${props => props.theme.fadeInTrans};
   align-self: center;
-`;
+`
 
 const NavLinks = styled.nav`
   display: flex;
@@ -44,12 +44,12 @@ const NavLinks = styled.nav`
     &:after {
       height: 2px;
       background: ${props => props.theme.magenta};
-      content: '';
+      content: "";
       width: 0;
       position: absolute;
       transform: translateX(-50%);
       transition: width 0.4s;
-      transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
+      transition-timing-function: ${props => props.theme.popInTrans};
       left: 50%;
       margin-top: 1rem;
     }
@@ -74,8 +74,8 @@ const NavLinks = styled.nav`
 `
 
 const Header = () => (
-  <HeaderWrapper >
-    <HeaderTitle style={{ margin: 0 }} >
+  <HeaderWrapper>
+    <HeaderTitle style={{ margin: 0 }}>
       <Link to="/">DEAN NELLIS</Link>
     </HeaderTitle>
     <NavLinks>
