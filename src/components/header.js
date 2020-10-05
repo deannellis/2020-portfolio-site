@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
 
 const HeaderWrapper = styled.header`
   max-width: 100vw;
@@ -24,14 +24,14 @@ const HeaderWrapper = styled.header`
   transition-timing-function: ${props => props.theme.fadeInTrans};
   background: #fff;
   /* border-bottom: 1px solid black; */
-`
+`;
 
 const HeaderTitle = styled.h2`
   opacity: 100;
   transition: all 1s;
   transition-timing-function: ${props => props.theme.fadeInTrans};
   align-self: center;
-`
+`;
 
 const NavLinks = styled.nav`
   display: flex;
@@ -71,7 +71,7 @@ const NavLinks = styled.nav`
       }
     }
   }
-`
+`;
 
 const Header = () => (
   <HeaderWrapper>
@@ -79,19 +79,19 @@ const Header = () => (
       <Link to="/">DEAN NELLIS</Link>
     </HeaderTitle>
     <NavLinks>
-      <Link to="/">Work</Link>
-      <Link to="/">About</Link>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
       <Link to="/">Contact</Link>
     </NavLinks>
   </HeaderWrapper>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;
