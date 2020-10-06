@@ -73,18 +73,20 @@ const NavLinks = styled.nav`
   }
 `;
 
-const Header = () => (
-  <HeaderWrapper>
-    <HeaderTitle style={{ margin: 0 }}>
-      <Link to="/">DEAN NELLIS</Link>
-    </HeaderTitle>
-    <NavLinks>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <Link to="/">Contact</Link>
-    </NavLinks>
-  </HeaderWrapper>
-);
+const Header = () => {
+  return (
+    <HeaderWrapper>
+      <HeaderTitle style={{ margin: 0 }}>
+        <Link to="/">DEAN NELLIS</Link>
+      </HeaderTitle>
+      <NavLinks>
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+        <Link to="/">Contact</Link>
+      </NavLinks>
+    </HeaderWrapper>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

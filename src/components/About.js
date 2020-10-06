@@ -22,11 +22,13 @@ const About = () => {
     <AboutWrapper>
       <section id="about">
         <h2>About</h2>
+        <a href=""></a>
         <p>
           Hi, I'm Dean. I have worn many hats over the years: UX researcher, UI
-          designer, and graphic designer. I currently work at Lexmark as a
-          visual designer, creating attractive and intutive digital experiences
-          for our customers.
+          designer, and graphic designer. I currently work at{" "}
+          <a href="https://www.lexmark.com/">Lexmark</a> as a visual designer,
+          creating attractive and intutive digital experiences for our
+          customers.
           <br />
           <br />
           Over the past 3+ years, my passion has been cultivating my skills in
