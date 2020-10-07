@@ -1,10 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled, { ThemeProvider } from "styled-components"
-import { Controller, Scene } from "react-scrollmagic"
-import Header from "./header"
-import Footer from "./Footer"
-import "./global.css"
+import React from "react";
+import PropTypes from "prop-types";
+import styled, { ThemeProvider } from "styled-components";
+import { Controller, Scene } from "react-scrollmagic";
+import Header from "./header";
+import Footer from "./Footer";
+import "./global.css";
 
 const globalTheme = {
   magenta: "#F244C4",
@@ -27,7 +27,12 @@ const globalTheme = {
   headerShadow:
     "0 10px 20px rgba(29, 29, 37, 0.05), 0 6px 6px rgba(29, 29, 37, 0.06)",
   defaultTransition: "all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)",
-}
+  xsSize: "0.5rem",
+  sSize: "0.6rem",
+  mSize: "0.8rem",
+  lSize: "1.6rem",
+  xlSize: "2.4rem",
+};
 
 const Layout = ({ children }) => {
   return (
@@ -48,11 +53,11 @@ const Layout = ({ children }) => {
         </Scene>
       </Controller>
     </ThemeProvider>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
