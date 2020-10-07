@@ -1,7 +1,7 @@
 import placeholderImage1 from "../images/nordwood-themes-ubIWo074QlU-unsplash.jpg";
 import placeholderImage2 from "../images/jose-alejandro-cuffia-_4815u_ACqQ-unsplash.jpg";
 import placeholderImage3 from "../images/boxed-water-is-better-IG4hajNkbvM-unsplash.jpg";
-import flextCover from "../images/screenshot_01.png";
+import flextCover from "../images/flext_screencap_01.png";
 
 export const projectList = [
   {

@@ -48,7 +48,7 @@ const Flext = ({ location }) => {
         </section>
         <section>
           <h3>Static Comps</h3>
-          <Image path="screenshot_01.png" maxWidth="640" />
+          <Image path="flext_screencap_01.png" maxWidth="640" />
         </section>
       </ProjectWrapper>
       <ProjectFooter>

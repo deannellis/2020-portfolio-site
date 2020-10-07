@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Dean Nellis Portfolio Site`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `A portfolio of the work of designer/front-end developer, Dean Nellis`,
+    author: `Dean Nellis`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -37,4 +37,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
