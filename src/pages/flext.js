@@ -3,7 +3,11 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Image from "../components/Image";
+// import Image from "../components/Image";
+import {
+  FlextImage01,
+  FlextImage02,
+} from "../components/image-sharp/FlextImages";
 import {
   ProjectWrapper,
   ProjectFooter,
@@ -48,7 +52,20 @@ const Flext = ({ location }) => {
         </section>
         <section>
           <h3>Static Comps</h3>
-          <Image path="flext_screencap_01.png" maxWidth="640" />
+          <div className="project__comp">
+            <aside>
+              <h4>Dashboard Page</h4>
+              <p>Test</p>
+            </aside>
+            <FlextImage02 />
+          </div>
+          <div className="project__comp">
+            <aside>
+              <h4>Lifts Page</h4>
+              <p>test</p>
+            </aside>
+            <FlextImage01 />
+          </div>
         </section>
       </ProjectWrapper>
       <ProjectFooter>

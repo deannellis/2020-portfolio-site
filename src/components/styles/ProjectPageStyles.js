@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const ProjectWrapper = styled.div`
   display: flex;
@@ -13,6 +13,28 @@ export const ProjectWrapper = styled.div`
     }
     .gatsby-image-wrapper {
       box-shadow: ${props => props.theme.materialShadow2};
+      flex-grow: 1;
+    }
+    .project__comp {
+      display: flex;
+      margin-top: 1rem;
+      aside {
+        min-width: 30%;
+        margin: 0 1rem 0 0;
+      }
+      h4 {
+        margin-top: 0;
+        opacity: 0.84;
+      }
+      p {
+        opacity: 0.74;
+      }
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+        aside {
+          margin: 0 0 0 1rem;
+        }
+      }
     }
   }
   section.project-hero {
@@ -31,7 +53,7 @@ export const ProjectWrapper = styled.div`
       }
     }
   }
-`
+`;
 
 export const ProjectFooter = styled.section`
   display: flex;
@@ -83,4 +105,4 @@ export const ProjectFooter = styled.section`
       }
     }
   }
-`
+`;
