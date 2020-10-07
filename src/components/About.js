@@ -33,7 +33,7 @@ const About = () => {
           <br />
           Over the past 3+ years, my passion has been cultivating my skills in
           web development. After buidling many sites and applications, I feel I
-          am ready to wear the hat of front-end developer.
+          am ready to take on the role of front-end developer.
         </p>
         <StyledButton outline>
           <PDFIcon fill="#000" /> View Résumé
