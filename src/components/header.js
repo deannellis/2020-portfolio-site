@@ -66,6 +66,7 @@ const NavLinks = styled.nav`
     &:hover,
     &:focus {
       outline: none;
+      text-decoration: none;
       &:after {
         width: 100%;
       }

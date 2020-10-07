@@ -9,7 +9,7 @@ const AboutWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   section {
-    padding: 1rem 0 2rem;
+    padding: ${props => props.theme.mSize} 0 ${props => props.theme.xlSize};
     width: 70vw;
     p {
       width: 88%;

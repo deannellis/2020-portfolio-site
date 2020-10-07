@@ -6,12 +6,12 @@ import { projectList } from "../utils/projectList";
 
 const CardsWrapper = styled.section`
   background: ${props => props.theme.offWhite};
-  padding: 32px 0;
+  padding: ${props => props.theme.lSize} 0;
   .cards {
     margin: 0 auto;
     max-width: 70%;
     display: grid;
-    grid-gap: 32px;
+    grid-gap: ${props => props.theme.lSize};
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
