@@ -1,9 +1,8 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import placeholderImage1 from "../images/nordwood-themes-ubIWo074QlU-unsplash.jpg";
-import placeholderImage2 from "../images/jose-alejandro-cuffia-_4815u_ACqQ-unsplash.jpg";
-import placeholderImage3 from "../images/boxed-water-is-better-IG4hajNkbvM-unsplash.jpg";
+
+import { projectList } from "../utils/projectList";
 
 const CardsWrapper = styled.section`
   background: ${props => props.theme.offWhite};
@@ -66,60 +65,12 @@ const Card = styled(Link)`
   }
 `;
 
-const projectData = [
-  {
-    title: "Project 1",
-    image: placeholderImage1,
-    path: "/",
-  },
-  {
-    title: "Project 2",
-    image: placeholderImage2,
-    path: "/",
-  },
-  {
-    title: "Project 3",
-    image: placeholderImage3,
-    path: "/",
-  },
-  {
-    title: "Project 1",
-    image: placeholderImage1,
-    path: "/",
-  },
-  {
-    title: "Project 2",
-    image: placeholderImage2,
-    path: "/",
-  },
-  {
-    title: "Project 3",
-    image: placeholderImage3,
-    path: "/",
-  },
-  {
-    title: "Project 1",
-    image: placeholderImage1,
-    path: "/",
-  },
-  {
-    title: "Project 2",
-    image: placeholderImage2,
-    path: "/",
-  },
-  {
-    title: "Project 3",
-    image: placeholderImage3,
-    path: "/",
-  },
-];
-
 const Cards = () => {
   return (
     <CardsWrapper style={{ minHeight: "700px" }}>
       <div className="cards" id="work">
-        {projectData.map(project => (
-          <Card title={project.title} to={project.path}>
+        {projectList.map(project => (
+          <Card title={project.title} to={project.route}>
             <img src={project.image} alt={project.title} />
           </Card>
         ))}
