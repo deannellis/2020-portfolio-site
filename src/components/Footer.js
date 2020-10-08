@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const FooterWrapper = styled.footer`
   position: absolute;
@@ -10,6 +10,7 @@ const FooterWrapper = styled.footer`
   background-color: #efefef;
   display: flex;
   align-items: center;
+  box-shadow: ${props => props.theme.footerShadow};
   .footer__main {
     flex-grow: 1;
     text-align: center;
@@ -32,7 +33,7 @@ const FooterWrapper = styled.footer`
       }
     }
   }
-`
+`;
 
 const Footer = () => {
   return (
@@ -54,7 +55,7 @@ const Footer = () => {
       </div>
       {/* <div className="footer__to-top">top</div> */}
     </FooterWrapper>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

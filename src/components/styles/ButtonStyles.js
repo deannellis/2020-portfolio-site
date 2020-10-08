@@ -8,6 +8,8 @@ export const StyledButton = styled.button`
   display: flex;
   align-items: center;
   transition: ${props => props.theme.defaultTransition};
+  box-shadow: ${props =>
+    props.outline ? "none" : props.theme.materialShadow1};
   cursor: pointer;
   a {
     color: ${props => (props.outline ? "#000000e6" : "#000000A3")};

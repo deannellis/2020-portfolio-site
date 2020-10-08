@@ -18,15 +18,17 @@ const globalTheme = {
   offWhite: "#F2F2F2",
   fadeInTrans: "cubic-bezier(.25,.8,.25,1)",
   popInTrans: "cubic-bezier(1, -0.65, 0, 2.31)",
+  defaultTransition: "all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)",
   materialShadow1:
     "0 1px 3px rgba(29, 29, 37, 0.12), 0 1px 2px rgba(29, 29, 37, 0.24)",
   materialShadow2:
     "0 3px 6px rgba(29, 29, 37, 0.16), 0 3px 6px rgba(29, 29, 37, 0.23)",
   materialShadow3:
     "0 10px 20px rgba(29, 29, 37, 0.19), 0 6px 6px rgba(29, 29, 37, 0.23)",
+  footerShadow:
+    "0 -10px 20px rgba(29, 29, 37, 0.04), 0 -6px 6px rgba(29, 29, 37, 0.05)",
   headerShadow:
     "0 10px 20px rgba(29, 29, 37, 0.05), 0 6px 6px rgba(29, 29, 37, 0.06)",
-  defaultTransition: "all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)",
   xsSize: "0.5rem",
   sSize: "0.6rem",
   mSize: "0.8rem",
