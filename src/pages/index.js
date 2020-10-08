@@ -7,6 +7,7 @@ import SEO from "../components/seo";
 import Headline from "../components/Headline";
 import Cards from "../components/Cards";
 import About from "../components/About";
+import ContactForm from "../components/ContactForm";
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Headline />
     <Cards />
     <About />
+    <ContactForm />
   </Layout>
 );
 
