@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
@@ -9,14 +9,24 @@ import Cards from "../components/Cards";
 import About from "../components/About";
 import ContactForm from "../components/ContactForm";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Headline />
-    <Cards />
-    <About />
-    <ContactForm />
-  </Layout>
-);
+const IndexPage = ({ location }) => {
+  useEffect(() => {
+    if (location.hash !== "") {
+      const anchor = location.hash.substring(1);
+      if (anchor === "work" || anchor === "contact" || anchor === "about") {
+        document.getElementById(anchor).scrollIntoView();
+      }
+    }
+  });
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Headline />
+      <Cards />
+      <About />
+      <ContactForm />
+    </Layout>
+  );
+};
 
 export default IndexPage;
