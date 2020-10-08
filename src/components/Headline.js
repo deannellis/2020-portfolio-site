@@ -1,5 +1,5 @@
-import React, { Component } from "react"
-import styled from "styled-components"
+import React, { Component } from "react";
+import styled from "styled-components";
 // import AwesomeDebouncePromise from "awesome-debounce-promise"
 
 const HeadlineWrap = styled.div`
@@ -15,7 +15,7 @@ const HeadlineWrap = styled.div`
     text-transform: uppercase;
     margin-top: 0;
   }
-`
+`;
 
 const HeadlineText = styled.h1.attrs(props => ({
   yellowX: props.yellowX,
@@ -54,10 +54,10 @@ const HeadlineText = styled.h1.attrs(props => ({
     transform: translateX(${props => props.cyanX})
       translateY(${props => props.cyanY});
   }
-`
+`;
 class Headline extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       cyanX: 1,
       cyanY: 1,
@@ -65,71 +65,73 @@ class Headline extends Component {
       yellowY: 1,
       mouseX: undefined,
       mouseY: undefined,
-    }
+    };
   }
 
   getOffset = (position, direction) => {
-    return (position / direction - 0.5) * 4
-  }
+    return (position / direction - 0.5) * 4;
+  };
 
   move = ev => {
-    const x = ev.screenX
-    const y = ev.screenY
-    const { innerHeight: height, innerWidth: width } = window
-    const bX = this.getOffset(x, width)
-    const bY = this.getOffset(y, height)
-    const aX = 0 - bX
-    const aY = 0 - bY
-    let timedOut = false
-    const wait = 100
+    const x = ev.screenX;
+    const y = ev.screenY;
+    const { innerHeight: height, innerWidth: width } = window;
+    const bX = this.getOffset(x, width);
+    const bY = this.getOffset(y, height);
+    const aX = 0 - bX;
+    const aY = 0 - bY;
+    let timedOut = false;
+    const wait = 100;
     if (this.state.mouseX == undefined || this.state.mouseY == undefined) {
       this.setState({
         mouseX: x,
         mouseY: y,
-      })
+      });
     } else {
       if (!timedOut) {
-        this.setState({ cyanX: `${aX}%` })
-        this.setState({ yellowX: `${bX}%` })
-        this.setState({ cyanY: `${aY}%` })
-        this.setState({ yellowY: `${bY}%` })
-        timedOut = true
+        this.setState({ cyanX: `${aX}%` });
+        this.setState({ yellowX: `${bX}%` });
+        this.setState({ cyanY: `${aY}%` });
+        this.setState({ yellowY: `${bY}%` });
+        timedOut = true;
         setTimeout(() => {
-          timedOut = false
-        }, wait)
+          timedOut = false;
+        }, wait);
       }
     }
-  }
+  };
 
   debounce = fn => {
-    let frame
+    let frame;
 
     return (...params) => {
       if (frame) {
-        cancelAnimationFrame(frame)
+        cancelAnimationFrame(frame);
       }
       frame = requestAnimationFrame(() => {
-        fn(...params)
-      })
-    }
-  }
+        fn(...params);
+      });
+    };
+  };
 
   render() {
     return (
-      <HeadlineWrap onMouseMove={this.move}>
-        <h1>Hi, I'm</h1> 
-        <HeadlineText
-          cyanX={this.state.cyanX}
-          cyanY={this.state.cyanY}
-          yellowX={this.state.yellowX}
-          yellowY={this.state.yellowY}
-        >
-          DEAN NELLIS
-        </HeadlineText>
-        <p>a graphic designer, turned front-end developer</p>
-      </HeadlineWrap>
-    )
+      <>
+        <HeadlineWrap onMouseMove={this.move}>
+          <h1>Hi, I'm</h1>
+          <HeadlineText
+            cyanX={this.state.cyanX}
+            cyanY={this.state.cyanY}
+            yellowX={this.state.yellowX}
+            yellowY={this.state.yellowY}
+          >
+            DEAN NELLIS
+          </HeadlineText>
+          <p>a graphic designer, turned front-end developer</p>
+        </HeadlineWrap>
+      </>
+    );
   }
 }
 
-export default Headline
+export default Headline;

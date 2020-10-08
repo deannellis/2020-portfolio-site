@@ -8,6 +8,7 @@ const AboutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   section {
     padding: ${props => props.theme.mSize} 0 ${props => props.theme.xlSize};
     width: 70vw;
@@ -15,12 +16,17 @@ const AboutWrapper = styled.div`
       width: 88%;
     }
   }
+  #about {
+    position: absolute;
+    top: -80px;
+  }
 `;
 
 const About = () => {
   return (
     <AboutWrapper>
-      <section id="about">
+      <div id="about"></div>
+      <section>
         <h2>About</h2>
         <a href=""></a>
         <p>

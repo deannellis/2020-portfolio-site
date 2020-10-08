@@ -81,9 +81,9 @@ const Header = () => {
         <Link to="/">DEAN NELLIS</Link>
       </HeaderTitle>
       <NavLinks>
-        <a href="/#work">Work</a>
-        <a href="/#about">About</a>
-        <Link to="/">Contact</Link>
+        <Link to="/#work">Work</Link>
+        <Link to="/#about">About</Link>
+        <Link to="/#contact">Contact</Link>
       </NavLinks>
     </HeaderWrapper>
   );

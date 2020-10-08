@@ -6,13 +6,18 @@ import { projectList } from "../utils/projectList";
 
 const CardsWrapper = styled.section`
   background: ${props => props.theme.offWhite};
-  padding: ${props => props.theme.lSize} 0;
+  padding: ${props => props.theme.lSize};
+  position: relative;
   .cards {
     margin: 0 auto;
     max-width: 70%;
     display: grid;
     grid-gap: ${props => props.theme.lSize};
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  #work {
+    position: absolute;
+    top: -80px;
   }
 `;
 
@@ -68,7 +73,8 @@ const Card = styled(Link)`
 const Cards = () => {
   return (
     <CardsWrapper style={{ minHeight: "700px" }}>
-      <div className="cards" id="work">
+      <div id="work"></div>
+      <div className="cards">
         {projectList.map(project => (
           <Card title={project.title} to={project.route}>
             <img src={project.image} alt={project.title} />
