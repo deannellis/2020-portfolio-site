@@ -29,6 +29,7 @@ const ContactWrapper = styled.div`
       border: 2px solid black;
       padding: ${props => props.theme.mSize} ${props => props.theme.mSize} 0;
       border-radius: 4px;
+      width: 88%;
     }
     input {
       padding: ${props => props.theme.lSize} ${props => props.theme.mSize} 0;
