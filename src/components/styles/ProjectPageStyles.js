@@ -17,9 +17,10 @@ export const ProjectWrapper = styled.div`
     }
     .project__comp {
       display: flex;
-      margin-top: ${props => props.theme.lSize};
+      margin: ${props => props.theme.xlSize} 0 3.2rem;
       aside {
         min-width: 30%;
+        max-width: 32%;
         margin: 0 ${props => props.theme.mSize} 0 0;
       }
       h4 {
@@ -28,6 +29,17 @@ export const ProjectWrapper = styled.div`
       h4,
       p {
         opacity: 0.74;
+      }
+      .comp--mobile {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        .gatsby-image-wrapper {
+          max-width: 384px;
+          border-radius: 32px;
+          border: 8px solid #000000bd;
+          box-shadow: ${props => props.theme.materialShadow3};
+        }
       }
       &:nth-child(odd) {
         flex-direction: row-reverse;
@@ -59,7 +71,7 @@ export const ProjectFooter = styled.section`
   display: flex;
   align-items: stretch;
   align-content: stretch;
-  div {
+  .footer__half {
     width: 50%;
     display: flex;
     padding: ${props => props.theme.lSize} ${props => props.theme.xlSize};
@@ -75,12 +87,22 @@ export const ProjectFooter = styled.section`
   div:nth-child(odd) {
     background: ${props => props.theme.cyanLight};
     align-items: flex-start;
+    a {
+      text-decoration: underline;
+      text-decoration-color: #000000a3;
+    }
   }
   div:nth-child(even) {
     padding: 0;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    div {
+      display: flex;
+      background: #fff;
+      flex-direction: column;
+      align-items: center;
+    }
     img {
       position: absolute;
       transition: all 0.3s !important;
