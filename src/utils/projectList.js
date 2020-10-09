@@ -16,8 +16,8 @@ export const projectList = [
     image: gourmandCover,
   },
   {
-    route: "/thank-you",
-    title: "Project 2",
+    route: "/dice-roller",
+    title: "Dice Roller",
     image: placeholderImage2,
   },
   {
@@ -56,6 +56,6 @@ export const getNextProject = pathName => {
   const currentIndex = projectList.findIndex(
     project => project.route === pathName
   );
-  // ToDo: Needs logic for last project
+  // ToDo: Needs logic for last project in list
   return projectList[currentIndex + 1];
 };

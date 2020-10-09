@@ -3,12 +3,8 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
-import {
-  GourmandImage01,
-  GourmandImage02,
-  GourmandImage03,
-} from "../components/image-sharp/GourmandImages";
+import { DiceRollerImage01 } from "../components/image-sharp/DiceRollerImages";
+import rollingGif from "../gifs/DiceRolling64.gif";
 import {
   ProjectWrapper,
   ProjectFooter,
@@ -17,25 +13,23 @@ import { StyledButton } from "../components/styles/ButtonStyles";
 import { NextArrowIcon, LeaveSiteIcon, GitHubIcon } from "../utils/icons";
 import { getNextProject } from "../utils/projectList";
 
-const Gourmand = ({ location }) => {
+const DiceRoller = ({ location }) => {
   const nextProject = getNextProject(location.pathname);
   return (
     <Layout>
-      <SEO title="Gourmand" />
+      <SEO title="Dice Roller" />
       <ProjectWrapper>
         <section className="project-hero">
-          <h1>Gourmand: where recipes live</h1>
-          <h5>
-            Design &nbsp; / &nbsp; UI/UX &nbsp; / &nbsp; Full Stack Development
-          </h5>
+          <h1>Dice Roller: A virtual set of polyhedral dice</h1>
+          <h5>Design / Front-End Development</h5>
           <div className="project-hero__buttons">
-            <a href="https://gourmand-recipes.herokuapp.com/" target="blank">
+            <a href="https://dice-roller-applet.herokuapp.com/" target="blank">
               <StyledButton outline>
                 <LeaveSiteIcon fill="#000000D6" size="18" />
                 Visit the Website
               </StyledButton>
             </a>
-            <a href="https://github.com/deannellis/gourmand" target="blank">
+            <a href="https://github.com/deannellis/dice-roller" target="blank">
               <StyledButton outline>
                 <GitHubIcon fill="#000000D6" size="18" />
                 Visit the GitHub Repo
@@ -46,42 +40,35 @@ const Gourmand = ({ location }) => {
         <section>
           <h3>Background</h3>
           <p>
-            Gourmand is a web app that allows users to save their favorite
-            recipes and discover new ones, along with several other helpful
-            features.
-          </p>
-          <p>
-            With Gourmand, I wanted to practice building a REST API with
-            Express. This is one of the most back-end intensive apps that I have
-            built to date.
+            This project is one of the first things I created with React. It is
+            a simple, fun, aesthetically pleasing set of virtual polyhedral
+            dice. These dice are used for the roleplaying game, Dungeons &
+            Dragons.
           </p>
         </section>
         <section>
           <h3>Static Comps</h3>
-          <div className="project__comp">
+          <div className="project__comp" style={{ marginBottom: "5.6rem" }}>
             <aside>
-              <h4>Recipe Page</h4>
-              <p>
-                Easily reference your recipes or discover new recipes submitted
-                by others.
-              </p>
-            </aside>
-            <GourmandImage01 />
-          </div>
-          <div className="project__comp">
-            <aside>
-              <h4>Add Recipe Page</h4>
-              <p>This simple and flexible form makes it easy to add recipes.</p>
-            </aside>
-            <GourmandImage02 />
-          </div>
-          <div className="project__comp">
-            <aside>
-              <h4>Shopping List</h4>
-              <p>Users can easily add ingredients to their shopping list.</p>
+              <h4>Mobile View</h4>
+              {/* <p>
+                Your dice are always on your phone
+              </p> */}
             </aside>
             <div className="comp--mobile">
-              <GourmandImage03 />
+              <DiceRollerImage01 />
+            </div>
+          </div>
+          <div className="project__comp">
+            <aside>
+              <h4>Animation</h4>
+              <p>
+                I chose to animate the dice using a combination of SVG sprites
+                and CSS animations.
+              </p>
+            </aside>
+            <div className="comp--mobile">
+              <img src={rollingGif} alt="Sample animation of dice rolling" />
             </div>
           </div>
         </section>
@@ -91,16 +78,10 @@ const Gourmand = ({ location }) => {
           <h3>Technologies Used</h3>
           <ul>
             <li>
-              <a href="https://expressjs.com/">Express</a>
+              <a href="https://reactjs.org/">React</a>
             </li>
             <li>
-              <a href="https://pugjs.org/">Pug</a>
-            </li>
-            <li>
-              <a href="https://www.mongodb.com/">MongoDB</a>
-            </li>
-            <li>
-              <a href="https://cloudinary.com/">Cloudinary</a>
+              <a href="https://webpack.js.org/">Webpack</a>
             </li>
             <li>Javascript ES6</li>
             <li>
@@ -122,4 +103,4 @@ const Gourmand = ({ location }) => {
   );
 };
 
-export default Gourmand;
+export default DiceRoller;
