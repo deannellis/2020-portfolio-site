@@ -6,7 +6,7 @@ function withImageData(WrappedComponent) {
   return props => (
     <StaticQuery
       query={graphql`
-        query ImageQuery {
+        query FlextImageQuery {
           flextImage01: file(relativePath: { eq: "flext_screencap_01.png" }) {
             childImageSharp {
               fluid(maxWidth: 1000) {
@@ -15,6 +15,13 @@ function withImageData(WrappedComponent) {
             }
           }
           flextImage02: file(relativePath: { eq: "flext_screencap_02.png" }) {
+            childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          flextImage03: file(relativePath: { eq: "flext_screencap_03.png" }) {
             childImageSharp {
               fluid(maxWidth: 1000) {
                 ...GatsbyImageSharpFluid
@@ -36,32 +43,6 @@ export const FlextImage02 = withImageData(props => (
   <Img fluid={props.imageData.flextImage02.childImageSharp.fluid} />
 ));
 
-// export const FlextImage01 = () => {
-//   const imageData = useStaticQuery(graphql`
-//     query {
-//       file(relativePath: { regex: "/flext_screencap_01/" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 1000) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `);
-//   return <Img fluid={imageData.file.childImageSharp.fluid} />;
-// };
-
-// export const FlextImage02 = () => {
-//   const imageData = useStaticQuery(graphql`
-//     query {
-//       file(relativePath: { regex: "/flext_screencap_02/" }) {
-//         childImageSharp {
-//           fluid(maxWidth: 1000) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `);
-//   return <Img fluid={imageData.file.childImageSharp.fluid} />;
-// };
+export const FlextImage03 = withImageData(props => (
+  <Img fluid={props.imageData.flextImage03.childImageSharp.fluid} />
+));

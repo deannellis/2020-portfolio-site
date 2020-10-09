@@ -3,11 +3,12 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+
 import {
-  FlextImage01,
-  FlextImage02,
-  FlextImage03,
-} from "../components/image-sharp/FlextImages";
+  GourmandImage01,
+  GourmandImage02,
+  GourmandImage03,
+} from "../components/image-sharp/GourmandImages";
 import {
   ProjectWrapper,
   ProjectFooter,
@@ -16,25 +17,27 @@ import { StyledButton } from "../components/styles/ButtonStyles";
 import { NextArrowIcon, LeaveSiteIcon, GitHubIcon } from "../utils/icons";
 import { getNextProject } from "../utils/projectList";
 
-const Flext = ({ location }) => {
+const Gourmand = ({ location }) => {
   const nextProject = getNextProject(location.pathname);
   return (
     <Layout>
-      <SEO title="Flext" />
+      <SEO title="Gourmand" />
       <ProjectWrapper>
         <section className="project-hero">
-          <h1>Flext: a weight lifting companion app</h1>
-          <h5>Design / UI/UX / Front-End Development</h5>
+          <h1>Gourmand: a place for recipes</h1>
+          <h5>
+            Design &nbsp; / &nbsp; UI/UX &nbsp; / &nbsp; Full Stack Development
+          </h5>
           <div className="project-hero__buttons">
             <StyledButton outline>
               <LeaveSiteIcon fill="#000000D6" size="18" />
-              <a href="https://flext-app.herokuapp.com/" target="blank">
+              <a href="https://gourmand-recipes.herokuapp.com/" target="blank">
                 Visit the Website
               </a>
             </StyledButton>
             <StyledButton outline>
               <GitHubIcon fill="#000000D6" size="18" />
-              <a href="https://github.com/deannellis/flext" target="blank">
+              <a href="https://github.com/deannellis/gourmand" target="blank">
                 Visit the GitHub Repo
               </a>
             </StyledButton>
@@ -43,48 +46,43 @@ const Flext = ({ location }) => {
         <section>
           <h3>Background</h3>
           <p>
-            Flext is a single-page application that helps users create and
-            maintain a weight lifting routine. With this project, I wanted to
-            put into practice some D3 data visualization skills that I had been
-            working on.
+            Gourmand is a web app that allows users to save their favorite
+            recipes and discover new ones, along with several other helpful
+            features.
+          </p>
+          <p>
+            With Gourmand, I wanted to practice building a REST API with
+            Express. This is one of the most back-end intensive apps that I have
+            built to date.
           </p>
         </section>
         <section>
           <h3>Static Comps</h3>
           <div className="project__comp">
             <aside>
-              <h4>Dashboard Page</h4>
+              <h4>Recipe Page</h4>
               <p>
-                The dashboard gives users a quick overview of:
-                <ul>
-                  <li>Their next workout</li>
-                  <li>Past workouts</li>
-                  <li>Daily macros consumed</li>
-                </ul>
+                Easily reference your recipes or discover new recipes submitted
+                by others.
               </p>
             </aside>
-            <FlextImage02 />
+            <GourmandImage01 />
           </div>
           <div className="project__comp">
             <aside>
-              <h4>Lifts Page</h4>
-              <p>
-                The lifts page allows users to visualize their gains over time
-                for each lift.
-              </p>
+              <h4>Add Recipe Page</h4>
+              <p>This simple and flexible form makes it easy to add recipes.</p>
             </aside>
-            <FlextImage01 />
+            <GourmandImage02 />
           </div>
           <div className="project__comp">
             <aside>
-              <h4>Mid-workout</h4>
-              <p>
-                Flext will tell you exactly how much weight to put on the bar
-                for each set. Depending on your results, flext will
-                automatically adjust your weight.
-              </p>
+              <h4>Shopping List</h4>
+              <p>Users can easily add ingredients to their shopping list.</p>
             </aside>
-            <FlextImage03 />
+            <div className="comp--mobile">
+              <GourmandImage03 />
+            </div>
           </div>
         </section>
       </ProjectWrapper>
@@ -93,19 +91,16 @@ const Flext = ({ location }) => {
           <h3>Technologies Used</h3>
           <ul>
             <li>
-              <a href="https://reactjs.org/">React</a>
+              <a href="https://expressjs.com/">Express</a>
             </li>
             <li>
-              <a href="https://redux.js.org/">Redux</a>
+              <a href="https://pugjs.org/">Pug</a>
             </li>
             <li>
-              <a href="https://d3js.org/">D3</a>
+              <a href="https://www.mongodb.com/">MongoDB</a>
             </li>
             <li>
-              <a href="http://firebase.google.com/">Firebase</a>
-            </li>
-            <li>
-              <a href="https://webpack.js.org/">Webpack</a>
+              <a href="https://cloudinary.com/">Cloudinary</a>
             </li>
             <li>Javascript ES6</li>
             <li>
@@ -127,4 +122,4 @@ const Flext = ({ location }) => {
   );
 };
 
-export default Flext;
+export default Gourmand;
