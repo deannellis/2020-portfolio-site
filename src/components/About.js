@@ -15,6 +15,9 @@ const AboutWrapper = styled.div`
     p {
       width: 88%;
     }
+    a:hover {
+      text-decoration: underline;
+    }
   }
   #about {
     position: absolute;
