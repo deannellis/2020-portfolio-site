@@ -3,6 +3,8 @@ import placeholderImage2 from "../images/jose-alejandro-cuffia-_4815u_ACqQ-unspl
 import placeholderImage3 from "../images/boxed-water-is-better-IG4hajNkbvM-unsplash.jpg";
 import flextCover from "../images/flext_screencap_01.png";
 import gourmandCover from "../images/Gourmand_Cover.png";
+import kineticTypeCover from "../images/kineticType_Cover.jpg";
+import diceRollerCover from "../images/diceRoller_Cover.png";
 
 export const projectList = [
   {
@@ -18,12 +20,12 @@ export const projectList = [
   {
     route: "/dice-roller",
     title: "Dice Roller",
-    image: placeholderImage2,
+    image: diceRollerCover,
   },
   {
-    route: "/thank-you",
-    title: "Project 3",
-    image: placeholderImage3,
+    route: "/kinetic-type",
+    title: "Kinetic Typography",
+    image: kineticTypeCover,
   },
   {
     route: "/thank-you",
