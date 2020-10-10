@@ -15,6 +15,10 @@ export const ProjectWrapper = styled.div`
       box-shadow: ${props => props.theme.materialShadow2};
       flex-grow: 1;
     }
+    .project__video-player {
+      display: flex;
+      justify-content: center;
+    }
     .project__comp {
       display: flex;
       margin: ${props => props.theme.xlSize} 0 3.2rem;
@@ -64,6 +68,10 @@ export const ProjectWrapper = styled.div`
         margin-right: ${props => props.theme.mSize};
       }
     }
+    .project-hero__details {
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -73,6 +81,7 @@ export const ProjectFooter = styled.section`
   align-content: stretch;
   .footer__half {
     width: 50%;
+    min-height: 24rem;
     display: flex;
     padding: ${props => props.theme.lSize} ${props => props.theme.xlSize};
     flex-direction: column;
@@ -87,6 +96,7 @@ export const ProjectFooter = styled.section`
   div:nth-child(odd) {
     background: ${props => props.theme.cyanLight};
     align-items: flex-start;
+    justify-content: flex-start;
     a {
       text-decoration: underline;
       text-decoration-color: #000000a3;
