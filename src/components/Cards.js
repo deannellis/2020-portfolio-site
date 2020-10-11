@@ -9,11 +9,19 @@ const CardsWrapper = styled.section`
   padding: ${props => props.theme.lSize};
   position: relative;
   .cards {
-    margin: 0 auto;
-    max-width: 70%;
+    @media (${props => props.theme.tabletLandscapeUp}) {
+      margin: 0 auto;
+      max-width: 70%;
+    }
     display: grid;
     grid-gap: ${props => props.theme.lSize};
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    /* @media (${props => props.theme.tabletPortraitUp}) {
+      grid-template-columns: 1fr 1fr;
+    } */
+    @media (${props => props.theme.tabletLandscapeUp}) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
   #work {
     position: absolute;

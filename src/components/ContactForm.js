@@ -9,8 +9,12 @@ const ContactWrapper = styled.div`
   align-items: center;
   background: ${props => props.theme.offWhite};
   section {
-    padding: ${props => props.theme.mSize} 0 ${props => props.theme.xlSize};
-    width: 70vw;
+    width: 100%;
+    padding: 0 ${props => props.theme.lSize} ${props => props.theme.lSize};
+    @media (${props => props.theme.tabletLandscapeUp}) {
+      padding: ${props => props.theme.mSize} 0 ${props => props.theme.xlSize};
+      width: 70vw;
+    }
   }
   form {
     .input-group {
@@ -29,7 +33,10 @@ const ContactWrapper = styled.div`
       border: 2px solid black;
       padding: ${props => props.theme.mSize} ${props => props.theme.mSize} 0;
       border-radius: 4px;
-      width: 88%;
+      width: 100%;
+      @media (${props => props.theme.tabletLandscapeUp}) {
+        width: 88%;
+      }
       height: 6rem;
       line-height: 1.6;
     }
@@ -40,7 +47,10 @@ const ContactWrapper = styled.div`
       background: none;
       border: none;
       border-bottom: 2px solid black;
-      width: 20rem;
+      width: 100%;
+      @media (${props => props.theme.tabletLandscapeUp}) {
+        width: 20rem;
+      }
     }
     input:focus {
       border-bottom: 2px solid ${props => props.theme.cyan};
