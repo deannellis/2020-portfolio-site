@@ -2,11 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { ThemeProvider } from "styled-components";
 import { Controller, Scene } from "react-scrollmagic";
-import Header from "./header";
+import Header from "./Header";
 import Footer from "./Footer";
 import "./global.css";
 
 const globalTheme = {
+  // COLORS
   magenta: "#F244C4",
   magentaOpacity60: "rgba(242, 68, 196, .6)",
   cyan: "#05AFF2",
@@ -16,9 +17,11 @@ const globalTheme = {
   yellowOpacity60: "rgba(242, 159, 5, .6)",
   yellowLight: "#F2CB05",
   offWhite: "#F2F2F2",
+  // TRANSITIONS
   fadeInTrans: "cubic-bezier(.25,.8,.25,1)",
   popInTrans: "cubic-bezier(1, -0.65, 0, 2.31)",
   defaultTransition: "all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)",
+  // SHADOWS
   materialShadow1:
     "0 1px 3px rgba(29, 29, 37, 0.12), 0 1px 2px rgba(29, 29, 37, 0.24)",
   materialShadow2:
@@ -29,11 +32,18 @@ const globalTheme = {
     "0 -10px 20px rgba(29, 29, 37, 0.04), 0 -6px 6px rgba(29, 29, 37, 0.05)",
   headerShadow:
     "0 10px 20px rgba(29, 29, 37, 0.05), 0 6px 6px rgba(29, 29, 37, 0.06)",
+  // SPACING
   xsSize: "0.5rem",
   sSize: "0.6rem",
   mSize: "0.8rem",
   lSize: "1.6rem",
   xlSize: "2.4rem",
+  // MEDIA QUERIES
+  phoneOnly: "max-width: 599px",
+  tabletPortraitUp: "min-width: 600px",
+  tabletLandscapeUp: "min-width: 900px",
+  desktopUp: "min-width: 1200px",
+  bigDesktopUp: "min-width: 1800px",
 };
 
 const Layout = ({ children }) => {

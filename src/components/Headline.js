@@ -4,7 +4,10 @@ import styled from "styled-components";
 
 const HeadlineWrap = styled.div`
   display: flex;
-  height: calc(100vh - 100px);
+  height: calc(80vh - 100px);
+  @media (${props => props.theme.tabletLandscapeUp}) {
+    height: calc(100vh - 100px);
+  }
   width: 100%;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +26,10 @@ const HeadlineText = styled.h1.attrs(props => ({
   cyanX: props.cyanX,
   cyanY: props.cyanY,
 }))`
-  font-size: 180px;
+  font-size: 80px;
+  @media (${props => props.theme.tabletLandscapeUp}) {
+    font-size: 180px;
+  }
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   /* transform: rotateX(20deg); */
   position: relative;

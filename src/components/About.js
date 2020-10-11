@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { StyledButton } from "./styles/ButtonStyles";
 import { PDFIcon } from "../utils/icons";
+import resumePdf from "../PDFs/DeanNellis_Resume.pdf";
 
 const AboutWrapper = styled.div`
   display: flex;
@@ -10,13 +11,24 @@ const AboutWrapper = styled.div`
   align-items: center;
   position: relative;
   section {
-    padding: ${props => props.theme.mSize} 0 ${props => props.theme.xlSize};
-    width: 70vw;
+    width: 100%;
+    padding: 0 ${props => props.theme.lSize} ${props => props.theme.lSize};
+    @media (${props => props.theme.tabletLandscapeUp}) {
+      padding: 0 0 ${props => props.theme.xlSize};
+
+      width: 70vw;
+    }
     p {
-      width: 88%;
+      width: 100%;
+      @media (${props => props.theme.tabletLandscapeUp}) {
+        width: 88%;
+      }
     }
     a:hover {
-      text-decoration: underline;
+      /* text-decoration: underline; */
+    }
+    a button:hover {
+      text-decoration: none;
     }
   }
   #about {
@@ -45,7 +57,9 @@ const About = () => {
           am ready to take on the role of front-end developer.
         </p>
         <StyledButton outline>
-          <PDFIcon fill="#000" /> View Résumé
+          <a href={resumePdf} target="blank">
+            <PDFIcon fill="#000" /> View Résumé
+          </a>
         </StyledButton>
       </section>
     </AboutWrapper>

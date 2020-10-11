@@ -13,7 +13,10 @@ const FooterWrapper = styled.footer`
   box-shadow: ${props => props.theme.footerShadow};
   .footer__main {
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
+    @media (${props => props.theme.tabletLandscapeUp}) {
+      text-align: center;
+    }
   }
   .footer__social {
     /* align-self: flex-end; */

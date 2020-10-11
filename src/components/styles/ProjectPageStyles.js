@@ -6,8 +6,12 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   border-bottom: 1px solid #00000052;
   section {
-    padding: ${props => props.theme.lSize} 0 ${props => props.theme.xlSize};
-    width: 70vw;
+    padding: ${props => props.theme.sSize} 0 ${props => props.theme.sSize};
+    width: 84vw;
+    @media (${props => props.theme.tabletLandscapeUp}) {
+      padding: ${props => props.theme.lSize} 0 ${props => props.theme.xlSize};
+      width: 70vw;
+    }
     p {
       margin-right: ${props => props.theme.mSize};
     }
@@ -21,10 +25,16 @@ export const ProjectWrapper = styled.div`
     }
     .project__comp {
       display: flex;
+      flex-direction: column;
+      @media (${props => props.theme.tabletLandscapeUp}) {
+        flex-direction: row;
+      }
       margin: ${props => props.theme.xlSize} 0 3.2rem;
       aside {
-        min-width: 30%;
-        max-width: 32%;
+        @media (${props => props.theme.tabletLandscapeUp}) {
+          min-width: 30%;
+          max-width: 32%;
+        }
         margin: 0 ${props => props.theme.mSize} 0 0;
       }
       h4 {
@@ -46,7 +56,9 @@ export const ProjectWrapper = styled.div`
         }
       }
       &:nth-child(odd) {
-        flex-direction: row-reverse;
+        @media (${props => props.theme.tabletLandscapeUp}) {
+          flex-direction: row-reverse;
+        }
         aside {
           margin: 0 0 0 ${props => props.theme.mSize};
         }
@@ -64,6 +76,10 @@ export const ProjectWrapper = styled.div`
     }
     .project-hero__buttons {
       display: flex;
+      flex-direction: column;
+      @media (${props => props.theme.tabletLandscapeUp}) {
+        flex-direction: row;
+      }
       button {
         margin-right: ${props => props.theme.mSize};
       }
@@ -79,8 +95,15 @@ export const ProjectFooter = styled.section`
   display: flex;
   align-items: stretch;
   align-content: stretch;
+  flex-direction: column;
+  @media (${props => props.theme.tabletLandscapeUp}) {
+    flex-direction: row;
+  }
   .footer__half {
-    width: 50%;
+    width: 100%;
+    @media (${props => props.theme.tabletLandscapeUp}) {
+      width: 50%;
+    }
     min-height: 24rem;
     display: flex;
     padding: ${props => props.theme.lSize} ${props => props.theme.xlSize};

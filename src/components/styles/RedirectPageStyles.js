@@ -5,4 +5,5 @@ export default styled.main`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 ${props => props.theme.lSize};
 `;

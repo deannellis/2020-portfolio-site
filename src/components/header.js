@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
+import siteIcon from "../images/favicon.png";
+
 const HeaderWrapper = styled.header`
   max-width: 100vw;
   display: grid;
@@ -18,7 +20,10 @@ const HeaderWrapper = styled.header`
     color: black;
     text-shadow: none;
   }
-  padding: 8px 36px;
+  padding: 8px ${props => props.theme.lSize};
+  @media (${props => props.theme.tabletLandscapeUp}) {
+    padding: 8px 36px;
+  }
   box-shadow: ${props => props.theme.headerShadow};
   transition: all 1s;
   transition-timing-function: ${props => props.theme.fadeInTrans};
@@ -31,6 +36,21 @@ const HeaderTitle = styled.h2`
   transition: all 1s;
   transition-timing-function: ${props => props.theme.fadeInTrans};
   align-self: center;
+  img {
+    width: 32px;
+    margin-bottom: 0;
+  }
+  span {
+    display: none;
+  }
+  @media (${props => props.theme.tabletPortraitUp}) {
+    span {
+      display: initial;
+    }
+    img {
+      display: none;
+    }
+  }
 `;
 
 const NavLinks = styled.nav`
@@ -78,7 +98,10 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderTitle style={{ margin: 0 }}>
-        <Link to="/">DEAN NELLIS</Link>
+        <Link to="/">
+          <span>DEAN NELLIS</span>
+          <img src={siteIcon} alt="site icon" />
+        </Link>
       </HeaderTitle>
       <NavLinks>
         <Link to="/#work">Work</Link>

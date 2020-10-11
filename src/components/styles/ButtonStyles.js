@@ -16,6 +16,8 @@ export const StyledButton = styled.button`
     text-shadow: none;
     text-decoration: none;
     background-image: none;
+    display: flex;
+    align-items: center;
   }
   svg {
     margin-right: ${props => props.theme.xsSize};
