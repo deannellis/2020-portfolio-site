@@ -25,22 +25,20 @@ const Gourmand = ({ location }) => {
       <ProjectWrapper>
         <section className="project-hero">
           <h1>Gourmand: where recipes live</h1>
-          <h5>
-            Design &nbsp; / &nbsp; UI/UX &nbsp; / &nbsp; Full Stack Development
-          </h5>
+          <h5>Design / UI/UX / Full Stack Development</h5>
           <div className="project-hero__buttons">
-            <a href="https://gourmand-recipes.herokuapp.com/" target="blank">
-              <StyledButton outline>
+            <StyledButton outline>
+              <a href="https://gourmand-recipes.herokuapp.com/" target="blank">
                 <LeaveSiteIcon fill="#000000D6" size="18" />
                 Visit the Website
-              </StyledButton>
-            </a>
-            <a href="https://github.com/deannellis/gourmand" target="blank">
-              <StyledButton outline>
+              </a>
+            </StyledButton>
+            <StyledButton outline>
+              <a href="https://github.com/deannellis/gourmand" target="blank">
                 <GitHubIcon fill="#000000D6" size="18" />
                 Visit the GitHub Repo
-              </StyledButton>
-            </a>
+              </a>
+            </StyledButton>
           </div>
         </section>
         <section>

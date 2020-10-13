@@ -5,6 +5,7 @@ import flextCover from "../images/flext_screencap_01.png";
 import gourmandCover from "../images/Gourmand_Cover.png";
 import kineticTypeCover from "../images/kineticType_Cover.jpg";
 import diceRollerCover from "../images/diceRoller_Cover.png";
+import cobLifeCover from "../images/CobLife_Cover.jpg";
 
 export const projectList = [
   {
@@ -28,9 +29,9 @@ export const projectList = [
     image: kineticTypeCover,
   },
   {
-    route: "/thank-you",
-    title: "Project 1",
-    image: placeholderImage1,
+    route: "/cob-life",
+    title: "Cob Life",
+    image: cobLifeCover,
   },
   {
     route: "/thank-you",
