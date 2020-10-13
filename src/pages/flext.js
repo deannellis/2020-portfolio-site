@@ -26,18 +26,18 @@ const Flext = ({ location }) => {
           <h1>Flext: a weight lifting companion app</h1>
           <h5>Design / UI/UX / Front-End Development</h5>
           <div className="project-hero__buttons">
-            <a href="https://flext-app.herokuapp.com/" target="blank">
-              <StyledButton outline>
+            <StyledButton outline>
+              <a href="https://flext-app.herokuapp.com/" target="blank">
                 <LeaveSiteIcon fill="#000000D6" size="18" />
                 Visit the Website
-              </StyledButton>
-            </a>
-            <a href="https://github.com/deannellis/flext" target="blank">
-              <StyledButton outline>
+              </a>
+            </StyledButton>
+            <StyledButton outline>
+              <a href="https://github.com/deannellis/flext" target="blank">
                 <GitHubIcon fill="#000000D6" size="18" />
                 Visit the GitHub Repo
-              </StyledButton>
-            </a>
+              </a>
+            </StyledButton>
           </div>
         </section>
         <section>
