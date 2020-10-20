@@ -9,11 +9,11 @@ export const ProjectWrapper = styled.div`
     padding: ${props => props.theme.sSize} 0 ${props => props.theme.sSize};
     width: 84vw;
     @media (${props => props.theme.tabletLandscapeUp}) {
-      padding: ${props => props.theme.lSize} 0 ${props => props.theme.xlSize};
+      padding: ${props => props.theme.sSize} 0 ${props => props.theme.mSize};
       width: 70vw;
     }
     p {
-      margin-right: ${props => props.theme.mSize};
+      padding-right: ${props => props.theme.xlSize};
     }
     .gatsby-image-wrapper {
       box-shadow: ${props => props.theme.materialShadow2};
