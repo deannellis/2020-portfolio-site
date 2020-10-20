@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { Controller, Scene } from "react-scrollmagic";
 import Header from "./Header";
 import Footer from "./Footer";

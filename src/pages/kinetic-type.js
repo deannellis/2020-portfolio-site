@@ -3,14 +3,11 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { DiceRollerImage01 } from "../components/image-sharp/DiceRollerImages";
-import rollingGif from "../gifs/DiceRolling64.gif";
 import {
   ProjectWrapper,
   ProjectFooter,
 } from "../components/styles/ProjectPageStyles";
-import { StyledButton } from "../components/styles/ButtonStyles";
-import { NextArrowIcon, LeaveSiteIcon, GitHubIcon } from "../utils/icons";
+import { NextArrowIcon } from "../utils/icons";
 import { getNextProject } from "../utils/projectList";
 
 const KineticType = ({ location }) => {
@@ -36,6 +33,7 @@ const KineticType = ({ location }) => {
               webkitallowfullscreen
               mozallowfullscreen
               allowfullscreen
+              title="Kinetic Typography: The Life Aquatic"
             ></iframe>
           </div>
         </section>
