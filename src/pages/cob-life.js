@@ -15,7 +15,7 @@ import {
 import { StyledButton } from "../components/styles/ButtonStyles";
 import { NextArrowIcon, LeaveSiteIcon, PDFIcon } from "../utils/icons";
 import { getNextProject } from "../utils/projectList";
-import processBook from '../PDFs/cobLife_ProcessBook.pdf'
+import processBook from "../PDFs/cobLife_ProcessBook.pdf";
 
 const CobLife = ({ location }) => {
   const nextProject = getNextProject(location.pathname);
@@ -83,7 +83,8 @@ const CobLife = ({ location }) => {
       <ProjectFooter>
         <div className="footer__half">
           <h3>Technologies Used</h3>
-          <li>
+          <ul>
+            <li>
               <a href="https://www.adobe.com/products/illustrator.html">
                 Illustrator
               </a>
@@ -93,7 +94,6 @@ const CobLife = ({ location }) => {
                 Photoshop
               </a>
             </li>
-          <ul>
             <li>HTML</li>
             <li>
               <a href="https://sass-lang.com/">Sass</a>
