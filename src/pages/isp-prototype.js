@@ -14,7 +14,7 @@ import {
   ProjectFooter,
 } from "../components/styles/ProjectPageStyles";
 import { StyledButton } from "../components/styles/ButtonStyles";
-import { NextArrowIcon, LeaveSiteIcon, PDFIcon } from "../utils/icons";
+import { NextArrowIcon, LeaveSiteIcon } from "../utils/icons";
 import { getNextProject } from "../utils/projectList";
 
 const CobLife = ({ location }) => {

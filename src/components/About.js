@@ -43,7 +43,6 @@ const About = () => {
       <div id="about"></div>
       <section>
         <h2>About</h2>
-        <a href=""></a>
         <p>
           Hi, I'm Dean. I have worn many hats over the years: UX researcher, UI
           designer, and graphic designer. I currently work at{" "}

@@ -1,6 +1,3 @@
-import placeholderImage1 from "../images/nordwood-themes-ubIWo074QlU-unsplash.jpg";
-import placeholderImage2 from "../images/jose-alejandro-cuffia-_4815u_ACqQ-unsplash.jpg";
-import placeholderImage3 from "../images/boxed-water-is-better-IG4hajNkbvM-unsplash.jpg";
 import flextCover from "../images/flext_screencap_01.png";
 import gourmandCover from "../images/Gourmand_Cover.png";
 import kineticTypeCover from "../images/kineticType_Cover.jpg";
@@ -39,21 +36,6 @@ export const projectList = [
     title: "In-Store Publisher Prototype",
     image: ispCover,
   },
-  // {
-  //   route: "/thank-you",
-  //   title: "Project 3",
-  //   image: placeholderImage3,
-  // },
-  // {
-  //   route: "/thank-you",
-  //   title: "Project 1",
-  //   image: placeholderImage1,
-  // },
-  // {
-  //   route: "/thank-you",
-  //   title: "Project 2",
-  //   image: placeholderImage2,
-  // },
 ];
 
 export const getNextProject = pathName => {

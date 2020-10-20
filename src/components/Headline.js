@@ -88,7 +88,7 @@ class Headline extends Component {
     const aY = 0 - bY;
     let timedOut = false;
     const wait = 100;
-    if (this.state.mouseX == undefined || this.state.mouseY == undefined) {
+    if (this.state.mouseX === undefined || this.state.mouseY === undefined) {
       this.setState({
         mouseX: x,
         mouseY: y,
