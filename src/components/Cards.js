@@ -84,7 +84,7 @@ const Cards = () => {
       <div id="work"></div>
       <div className="cards">
         {projectList.map(project => (
-          <Card title={project.title} to={project.route}>
+          <Card title={project.title} to={project.route} key={project.title}>
             <img src={project.image} alt={project.title} />
           </Card>
         ))}
