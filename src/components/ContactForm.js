@@ -78,7 +78,12 @@ const ContactForm = () => {
     <ContactWrapper>
       <section id="contact">
         <h2>Contact</h2>
-        <form name="Contact Form" method="POST" data-netlify="true">
+        <form
+          name="Contact Form"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you"
+        >
           <input type="hidden" name="form-name" value="Contact Form" />
           <div className="input-group">
             <input type="text" name="name" />
