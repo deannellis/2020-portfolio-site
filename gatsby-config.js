@@ -11,6 +11,12 @@ module.exports = {
       options: {},
     },
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: process.env.ANALYTICS_ID,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
