@@ -4,7 +4,10 @@ export const StyledButton = styled.button`
   background: ${props => (props.outline ? "#fff" : props.theme.cyanLight)};
   border-radius: 4px;
   border: ${props => (props.outline ? "1px solid #000" : "none")};
-  padding: ${props => props.theme.xsSize} ${props => props.theme.sSize};
+  padding: ${props => props.theme.sSize} ${props => props.theme.mSize};
+  @media (${props => props.theme.tabletLandscapeUp}) {
+    padding: ${props => props.theme.xsSize} ${props => props.theme.sSize};
+  }
   display: flex;
   align-items: center;
   transition: ${props => props.theme.defaultTransition};

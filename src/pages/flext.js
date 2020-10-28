@@ -96,6 +96,7 @@ const Flext = ({ location }) => {
                 src={macroGif}
                 alt="Sample animation Macro Tracker visualization"
                 width="352"
+                style={{ objectFit: "contain" }}
               />
             </div>
           </div>

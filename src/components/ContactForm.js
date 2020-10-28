@@ -48,6 +48,7 @@ const ContactWrapper = styled.div`
       border: none;
       border-bottom: 2px solid black;
       width: 100%;
+      border-radius: 0;
       @media (${props => props.theme.tabletLandscapeUp}) {
         width: 20rem;
       }
