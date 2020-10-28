@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import macroGif from "../gifs/flextRecordingR2-64-400.gif";
 import {
   FlextImage01,
   FlextImage02,
@@ -85,6 +86,23 @@ const Flext = ({ location }) => {
               </p>
             </aside>
             <FlextImage03 />
+          </div>
+          <div className="project__comp">
+            <aside>
+              <h4>Macro Visualization</h4>
+              <p>
+                Flext will tell you exactly how much weight to put on the bar
+                for each set. Depending on your results, flext will
+                automatically adjust your weight.
+              </p>
+            </aside>
+            <div className="comp--mobile">
+              <img
+                src={macroGif}
+                alt="Sample animation Macro Tracker visualization"
+                width="352"
+              />
+            </div>
           </div>
         </section>
       </ProjectWrapper>
