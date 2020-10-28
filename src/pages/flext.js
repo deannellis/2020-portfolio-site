@@ -90,11 +90,6 @@ const Flext = ({ location }) => {
           <div className="project__comp">
             <aside>
               <h4>Macro Visualization</h4>
-              <p>
-                Flext will tell you exactly how much weight to put on the bar
-                for each set. Depending on your results, flext will
-                automatically adjust your weight.
-              </p>
             </aside>
             <div className="comp--mobile">
               <img
