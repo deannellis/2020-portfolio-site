@@ -12,7 +12,7 @@ const IndexPage = ({ location }) => {
     if (location.hash !== "") {
       const anchor = location.hash.substring(1);
       if (anchor === "work" || anchor === "contact" || anchor === "about") {
-        document.getElementById(anchor).scrollIntoView();
+        document.getElementById(anchor).scrollIntoView({ behavior: "smooth" });
       }
     }
   });

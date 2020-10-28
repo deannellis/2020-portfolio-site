@@ -44,9 +44,9 @@ const Flext = ({ location }) => {
           <h3>Background</h3>
           <p>
             Flext is a single-page application that helps users create and
-            maintain a weight lifting routine. With this project, I wanted to
-            put into practice some D3 data visualization skills that I had been
-            working on.
+            maintain a weight lifting routine. This project uses{" "}
+            <a href="https://d3js.org/">D3</a> to create intuitive, interactive
+            visualizations of the user's data.
           </p>
         </section>
         <section>

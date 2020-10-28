@@ -45,15 +45,22 @@ const About = () => {
         <h2>About</h2>
         <p>
           Hi, I'm Dean. I have worn many hats over the years: UX researcher, UI
-          designer, and graphic designer. I currently work at{" "}
+          designer, and graphic designer. Currently I work at{" "}
           <a href="https://www.lexmark.com/">Lexmark</a> as a visual designer,
           creating attractive and intutive digital experiences for our
           customers.
-          <br />
-          <br />
-          Over the past 3+ years, my passion has been cultivating my skills in
-          web development. After buidling many sites and applications, I feel I
-          am ready to take on the role of front-end developer.
+        </p>
+        <p>
+          I graduated from the University of Cincinnati College of Design,
+          Architecture, Art, and Planning with a bachelor's degree in graphic
+          communication design, with a focus in interaction design. Over the
+          past 3+ years, my passion has been cultivating my skills in web
+          development.
+        </p>
+        <p>
+          I am continually learning about web development and building upon my
+          skills. I love crafting quality products that are delightful to use,
+          collaborating with others, and creating solutions to complex problems.
         </p>
         <StyledButton outline>
           <a href={resumePdf} target="blank">

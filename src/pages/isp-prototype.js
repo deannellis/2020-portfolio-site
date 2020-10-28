@@ -62,7 +62,7 @@ const CobLife = ({ location }) => {
             specialist. We had recently done a major redesign of the print
             workflow, a key part of the experience. We wanted to test the new
             workflow. It was going to take some significant time to implement,
-            at which point it might be too late alter.
+            at which point it might be too late to alter.
           </p>
           <p>
             The workflows were complex and would not be easily recreated with

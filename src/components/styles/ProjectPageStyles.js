@@ -5,6 +5,7 @@ export const ProjectWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #00000052;
+  scroll-behavior: auto;
   section {
     padding: ${props => props.theme.sSize} 0 ${props => props.theme.sSize};
     width: 84vw;
