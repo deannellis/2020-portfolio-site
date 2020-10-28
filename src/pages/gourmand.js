@@ -45,13 +45,14 @@ const Gourmand = ({ location }) => {
           <h3>Background</h3>
           <p>
             Gourmand is a web app that allows users to save their favorite
-            recipes and discover new ones, along with several other helpful
-            features.
+            recipes and discover new ones, along with several helpful features.
           </p>
           <p>
-            With Gourmand, I wanted to practice building a REST API with
-            Express. This is one of the most back-end intensive apps that I have
-            built to date.
+            The back-end utilizes a REST API built with{" "}
+            <a href="https://expressjs.com/">Express</a> to handle data
+            manipulation and storage in{" "}
+            <a href="https://www.mongodb.com/">MongoDB</a>. This is one of the
+            most back-end intensive apps that I have built to date.
           </p>
         </section>
         <section>

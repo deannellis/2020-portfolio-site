@@ -46,10 +46,10 @@ const DiceRoller = ({ location }) => {
         <section>
           <h3>Background</h3>
           <p>
-            This project is one of the first things I created with React. It is
-            a simple, fun, aesthetically pleasing set of virtual polyhedral
-            dice. These dice are used for the roleplaying game, Dungeons &
-            Dragons.
+            This project is a simple, fun, aesthetically pleasing set of virtual
+            polyhedral dice. These dice are used for the roleplaying game,
+            Dungeons & Dragons. Never worry about leaving your dice at home
+            again!
           </p>
         </section>
         <section>

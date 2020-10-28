@@ -133,7 +133,7 @@ class Headline extends Component {
           >
             DEAN NELLIS
           </HeadlineText>
-          <p>a graphic designer, turned front-end developer</p>
+          <p>I am a front-end developer & visual designer</p>
         </HeadlineWrap>
       </>
     );
