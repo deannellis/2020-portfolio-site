@@ -87,11 +87,11 @@ const ContactForm = () => {
         >
           <input type="hidden" name="form-name" value="Contact Form" />
           <div className="input-group">
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
             <label>Name</label>
           </div>
           <div className="input-group">
-            <input type="email" name="email" />
+            <input type="email" name="email" required />
             <label>Email</label>
           </div>
           <div className="input-group">
