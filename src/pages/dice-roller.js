@@ -53,7 +53,7 @@ const DiceRoller = ({ location }) => {
           </p>
         </section>
         <section>
-          <h3>Static Comps</h3>
+          {/* <h3>Static Comps</h3> */}
           <div className="project__comp" style={{ marginBottom: "5.6rem" }}>
             <aside>
               <h4>Mobile View</h4>

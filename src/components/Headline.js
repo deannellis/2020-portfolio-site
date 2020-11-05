@@ -14,9 +14,17 @@ const HeadlineWrap = styled.div`
   align-items: center;
   perspective: 200vmin;
   text-align: center;
-  h1 {
-    text-transform: uppercase;
-    margin-top: 0;
+  h1,
+  h2 {
+    margin: ${props => props.theme.sSize};
+  }
+  h1.headline__before,
+  h2 {
+    opacity: 0.82;
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-bottom: 3.6rem;
   }
 `;
 
@@ -31,7 +39,6 @@ const HeadlineText = styled.h1.attrs(props => ({
     font-size: 180px;
   }
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  /* transform: rotateX(20deg); */
   position: relative;
   color: magenta;
   background-blend-mode: screen;
@@ -124,7 +131,7 @@ class Headline extends Component {
     return (
       <>
         <HeadlineWrap onMouseMove={this.move}>
-          <h1>Hi, I'm</h1>
+          <h1 className="headline__before">Hi, I'm</h1>
           <HeadlineText
             cyanX={this.state.cyanX}
             cyanY={this.state.cyanY}
@@ -133,7 +140,7 @@ class Headline extends Component {
           >
             DEAN NELLIS
           </HeadlineText>
-          <p>I am a front-end developer & visual designer</p>
+          <h2>a front-end developer & UI/UX designer</h2>
         </HeadlineWrap>
       </>
     );
