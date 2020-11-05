@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Headline from "../components/Headline";
-import Cards from "../components/Cards";
+import Cards from "../components/WorkCards";
 import About from "../components/About";
 import ContactForm from "../components/ContactForm";
 

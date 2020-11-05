@@ -56,7 +56,7 @@ const Gourmand = ({ location }) => {
           </p>
         </section>
         <section>
-          <h3>Static Comps</h3>
+          {/* <h3>Static Comps</h3> */}
           <div className="project__comp">
             <aside>
               <h4>Recipe Page</h4>

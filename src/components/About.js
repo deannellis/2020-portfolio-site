@@ -14,7 +14,7 @@ const AboutWrapper = styled.div`
     width: 100%;
     padding: 0 ${props => props.theme.lSize} ${props => props.theme.lSize};
     @media (${props => props.theme.tabletLandscapeUp}) {
-      padding: 0 0 ${props => props.theme.xlSize};
+      padding: ${props => props.theme.mSize} 0 ${props => props.theme.xlSize};
 
       width: 70vw;
     }
@@ -52,8 +52,8 @@ const About = () => {
         </p>
         <p>
           I graduated from the University of Cincinnati College of Design,
-          Architecture, Art, and Planning with a bachelor's degree in graphic
-          communication design, with a focus in interaction design. Over the
+          Architecture, Art, and Planning with a bachelor's degree in Graphic
+          Communication Design, with a focus in Interaction Design. Over the
           past 3+ years, my passion has been cultivating my skills in web
           development.
         </p>

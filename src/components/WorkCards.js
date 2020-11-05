@@ -11,14 +11,11 @@ const CardsWrapper = styled.section`
   .cards {
     @media (${props => props.theme.tabletLandscapeUp}) {
       margin: 0 auto;
-      max-width: 70%;
+      max-width: 70vw;
     }
     display: grid;
     grid-gap: ${props => props.theme.lSize};
     grid-template-columns: 1fr;
-    /* @media (${props => props.theme.tabletPortraitUp}) {
-      grid-template-columns: 1fr 1fr;
-    } */
     @media (${props => props.theme.tabletLandscapeUp}) {
       grid-template-columns: 1fr 1fr 1fr;
     }

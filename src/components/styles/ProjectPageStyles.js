@@ -10,7 +10,7 @@ export const ProjectWrapper = styled.div`
     padding: ${props => props.theme.sSize} 0 ${props => props.theme.sSize};
     width: 84vw;
     @media (${props => props.theme.tabletLandscapeUp}) {
-      padding: ${props => props.theme.sSize} 0 ${props => props.theme.mSize};
+      padding: ${props => props.theme.sSize} 0 ${props => props.theme.lSize};
       width: 70vw;
     }
     p {
@@ -33,7 +33,7 @@ export const ProjectWrapper = styled.div`
       @media (${props => props.theme.tabletLandscapeUp}) {
         flex-direction: row;
       }
-      margin: ${props => props.theme.xlSize} 0 3.2rem;
+      margin: 0 0 6rem ;
       aside {
         @media (${props => props.theme.tabletLandscapeUp}) {
           min-width: 30%;
@@ -53,20 +53,20 @@ export const ProjectWrapper = styled.div`
         display: flex;
         justify-content: center;
         .gatsby-image-wrapper {
-          max-width: 384px;
+          max-width: 328px;
           border-radius: 32px;
           border: 8px solid #000000bd;
           box-shadow: ${props => props.theme.materialShadow3};
         }
       }
-      &:nth-child(odd) {
+      /* &:nth-child(odd) {
         @media (${props => props.theme.tabletLandscapeUp}) {
           flex-direction: row-reverse;
         }
         aside {
           margin: 0 0 0 ${props => props.theme.mSize};
         }
-      }
+      } */
     }
   }
   section.project-hero {

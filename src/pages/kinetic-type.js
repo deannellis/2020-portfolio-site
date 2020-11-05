@@ -24,6 +24,14 @@ const KineticType = ({ location }) => {
           </div>
         </section>
         <section>
+          <h3>Background</h3>
+          <p>
+            This kinetic typography animation samples audio from the film{" "}
+            <em>The Life Aquatic with Steve Zissou</em>. This project
+            demonstrates type in motion, creating dynamic compositions.
+          </p>
+        </section>
+        <section>
           <div className="project__video-player">
             <iframe
               src="https://player.vimeo.com/video/85829969?color=ffffff"
@@ -36,14 +44,6 @@ const KineticType = ({ location }) => {
               title="Kinetic Typography: The Life Aquatic"
             ></iframe>
           </div>
-        </section>
-        <section>
-          <h3>Background</h3>
-          <p>
-            This kinetic typography animation samples audio from the film{" "}
-            <em>The Life Aquatic with Steve Zissou</em>. This project
-            demonstrates type in motion, creating dynamic compositions.
-          </p>
         </section>
       </ProjectWrapper>
       <ProjectFooter>
