@@ -27,12 +27,12 @@ const CobLife = ({ location }) => {
           <h1>In-Store Publisher Prototype</h1>
           <h5>Front-End Development / Visual Design</h5>
           <div className="project-hero__buttons">
-            <StyledButton outline>
-              <a href="https://ppr-prototype.herokuapp.com/" target="blank">
+            <a href="https://ppr-prototype.herokuapp.com/" target="blank">
+              <StyledButton outline>
                 <LeaveSiteIcon fill="#000000D6" size="18" />
                 Visit the Website
-              </a>
-            </StyledButton>
+              </StyledButton>
+            </a>
           </div>
         </section>
         <section>

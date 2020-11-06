@@ -27,18 +27,18 @@ const Gourmand = ({ location }) => {
           <h1>Gourmand: where recipes live</h1>
           <h5>Design / UI/UX / Full Stack Development</h5>
           <div className="project-hero__buttons">
-            <StyledButton outline>
-              <a href="https://gourmand-recipes.herokuapp.com/" target="blank">
+            <a href="https://gourmand-recipes.herokuapp.com/" target="blank">
+              <StyledButton outline>
                 <LeaveSiteIcon fill="#000000D6" size="18" />
                 Visit the Website
-              </a>
-            </StyledButton>
-            <StyledButton outline>
-              <a href="https://github.com/deannellis/gourmand" target="blank">
+              </StyledButton>
+            </a>
+            <a href="https://github.com/deannellis/gourmand" target="blank">
+              <StyledButton outline>
                 <GitHubIcon fill="#000000D6" size="18" />
                 Visit the GitHub Repo
-              </a>
-            </StyledButton>
+              </StyledButton>
+            </a>
           </div>
         </section>
         <section>

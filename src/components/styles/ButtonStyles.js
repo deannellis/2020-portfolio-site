@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const ButtonWrapper = styled.div`
+  display: flex;
+`;
+
 export const StyledButton = styled.button`
   background: ${props => (props.outline ? "#fff" : props.theme.cyanLight)};
   border-radius: 4px;
@@ -28,9 +32,7 @@ export const StyledButton = styled.button`
     background: ${props =>
       props.outline ? "#fff" : props.theme.cyanLightOpacity60};
     border-color: ${props => (props.outline ? props.theme.magenta : "none")};
-    a {
-      transition: ${props => props.theme.defaultTransition};
-      color: ${props => (props.outline ? props.theme.magenta : "#000")};
-    }
+    transition: ${props => props.theme.defaultTransition};
+    color: ${props => (props.outline ? props.theme.magenta : "#000")};
   }
 `;

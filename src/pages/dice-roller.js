@@ -23,24 +23,18 @@ const DiceRoller = ({ location }) => {
           <h1>Dice Roller: A virtual set of polyhedral dice</h1>
           <h5>Design / Front-End Development</h5>
           <div className="project-hero__buttons">
-            <StyledButton outline>
-              <a
-                href="https://dice-roller-applet.herokuapp.com/"
-                target="blank"
-              >
+            <a href="https://dice-roller-applet.herokuapp.com/" target="blank">
+              <StyledButton outline>
                 <LeaveSiteIcon fill="#000000D6" size="18" />
                 Visit the Website
-              </a>
-            </StyledButton>
-            <StyledButton outline>
-              <a
-                href="https://github.com/deannellis/dice-roller"
-                target="blank"
-              >
+              </StyledButton>
+            </a>
+            <a href="https://github.com/deannellis/dice-roller" target="blank">
+              <StyledButton outline>
                 <GitHubIcon fill="#000000D6" size="18" />
                 Visit the GitHub Repo
-              </a>
-            </StyledButton>
+              </StyledButton>
+            </a>
           </div>
         </section>
         <section>

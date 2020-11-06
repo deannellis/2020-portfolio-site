@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { StyledButton } from "./styles/ButtonStyles";
+import { StyledButton, ButtonWrapper } from "./styles/ButtonStyles";
 import { PDFIcon } from "../utils/icons";
 import resumePdf from "../PDFs/DeanNellis_Resume.pdf";
 
@@ -62,11 +62,13 @@ const About = () => {
           skills. I love crafting quality products that are delightful to use,
           collaborating with others, and creating solutions to complex problems.
         </p>
-        <StyledButton outline>
+        <ButtonWrapper>
           <a href={resumePdf} target="blank">
-            <PDFIcon fill="#000" /> View Résumé
+            <StyledButton outline>
+              <PDFIcon fill="#000" /> View Résumé
+            </StyledButton>
           </a>
-        </StyledButton>
+        </ButtonWrapper>
       </section>
     </AboutWrapper>
   );
