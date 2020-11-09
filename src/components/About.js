@@ -47,7 +47,7 @@ const About = () => {
           Hi, I'm Dean. I have worn many hats over the years: UX researcher, UI
           designer, and graphic designer. Currently I work at{" "}
           <a href="https://www.lexmark.com/">Lexmark</a> as a visual designer,
-          creating attractive and intutive digital experiences for our
+          creating attractive and intuitive digital experiences for our
           customers.
         </p>
         <p>
