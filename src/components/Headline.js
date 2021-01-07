@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-// import AwesomeDebouncePromise from "awesome-debounce-promise"
 
 const HeadlineWrap = styled.div`
   display: flex;
@@ -78,53 +77,50 @@ class Headline extends Component {
       yellowY: 1,
       mouseX: undefined,
       mouseY: undefined,
+      timedOut: false,
     };
   }
 
   getOffset = (position, direction) => {
-    return (position / direction - 0.5) * 4;
+    const offset = (position / direction - 0.5) * 4;
+    return offset;
+  };
+  clampTransform = value => {
+    if (value > 2) {
+      return 2;
+    } else if (value < -2) {
+      return -2;
+    } else {
+      return value;
+    }
   };
 
   move = ev => {
-    const x = ev.screenX;
-    const y = ev.screenY;
+    const x = ev.clientX;
+    const y = ev.clientY;
     const { innerHeight: height, innerWidth: width } = window;
     const bX = this.getOffset(x, width);
     const bY = this.getOffset(y, height);
     const aX = 0 - bX;
     const aY = 0 - bY;
-    let timedOut = false;
-    const wait = 100;
+    const wait = 80;
     if (this.state.mouseX === undefined || this.state.mouseY === undefined) {
       this.setState({
         mouseX: x,
         mouseY: y,
       });
     } else {
-      if (!timedOut) {
+      if (!this.state.timedOut) {
         this.setState({ cyanX: `${aX}%` });
         this.setState({ yellowX: `${bX}%` });
         this.setState({ cyanY: `${aY}%` });
         this.setState({ yellowY: `${bY}%` });
-        timedOut = true;
+        this.setState({ timedOut: true });
         setTimeout(() => {
-          timedOut = false;
+          this.setState({ timedOut: false });
         }, wait);
       }
     }
-  };
-
-  debounce = fn => {
-    let frame;
-
-    return (...params) => {
-      if (frame) {
-        cancelAnimationFrame(frame);
-      }
-      frame = requestAnimationFrame(() => {
-        fn(...params);
-      });
-    };
   };
 
   render() {
