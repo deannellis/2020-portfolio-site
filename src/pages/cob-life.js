@@ -29,13 +29,13 @@ const CobLife = ({ location }) => {
           <div className="project-hero__buttons">
             <a href="https://deannellis.github.io/cob-life/" target="blank">
               <StyledButton outline>
-                <LeaveSiteIcon fill="#000000D6" size="18" />
+                <LeaveSiteIcon size="18" />
                 Visit the Website
               </StyledButton>
             </a>
             <a href={processBook} target="blank">
               <StyledButton outline>
-                <PDFIcon fill="#000000D6" size="18" />
+                <PDFIcon size="18" />
                 View Process Book
               </StyledButton>
             </a>

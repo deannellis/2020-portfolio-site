@@ -29,13 +29,13 @@ const Flext = ({ location }) => {
           <div className="project-hero__buttons">
             <a href="https://flext-app.herokuapp.com/" target="blank">
               <StyledButton outline>
-                <LeaveSiteIcon fill="#000000D6" size="18" />
+                <LeaveSiteIcon size="18" />
                 Visit the Website
               </StyledButton>
             </a>
             <a href="https://github.com/deannellis/flext" target="blank">
               <StyledButton outline>
-                <GitHubIcon fill="#000000D6" size="18" />
+                <GitHubIcon size="18" />
                 Visit the GitHub Repo
               </StyledButton>
             </a>

@@ -86,6 +86,15 @@ export const ProjectWrapper = styled.div`
       }
       button {
         margin-right: ${props => props.theme.mSize};
+          svg {
+            transition: ${props => props.theme.defaultTransition};
+            fill:  #000000d6;
+          }
+        &:hover {
+          svg {
+            fill:  ${props => props.theme.magenta};
+          }
+        }
       }
     }
     .project-hero__details {

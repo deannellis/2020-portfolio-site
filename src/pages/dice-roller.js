@@ -25,13 +25,13 @@ const DiceRoller = ({ location }) => {
           <div className="project-hero__buttons">
             <a href="https://dice-roller-applet.herokuapp.com/" target="blank">
               <StyledButton outline>
-                <LeaveSiteIcon fill="#000000D6" size="18" />
+                <LeaveSiteIcon size="18" />
                 Visit the Website
               </StyledButton>
             </a>
             <a href="https://github.com/deannellis/dice-roller" target="blank">
               <StyledButton outline>
-                <GitHubIcon fill="#000000D6" size="18" />
+                <GitHubIcon size="18" />
                 Visit the GitHub Repo
               </StyledButton>
             </a>
