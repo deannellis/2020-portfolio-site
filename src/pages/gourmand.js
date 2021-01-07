@@ -29,13 +29,13 @@ const Gourmand = ({ location }) => {
           <div className="project-hero__buttons">
             <a href="https://gourmand-recipes.herokuapp.com/" target="blank">
               <StyledButton outline>
-                <LeaveSiteIcon fill="#000000D6" size="18" />
+                <LeaveSiteIcon size="18" />
                 Visit the Website
               </StyledButton>
             </a>
             <a href="https://github.com/deannellis/gourmand" target="blank">
               <StyledButton outline>
-                <GitHubIcon fill="#000000D6" size="18" />
+                <GitHubIcon size="18" />
                 Visit the GitHub Repo
               </StyledButton>
             </a>
