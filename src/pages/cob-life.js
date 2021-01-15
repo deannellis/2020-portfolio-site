@@ -35,7 +35,7 @@ const CobLife = ({ location }) => {
             </a>
             <a href={processBook} target="blank">
               <StyledButton outline>
-                <PDFIcon size="18" />
+                <PDFIcon size="20" />
                 View Process Book
               </StyledButton>
             </a>

@@ -30,6 +30,17 @@ const AboutWrapper = styled.div`
     a button:hover {
       text-decoration: none;
     }
+    button {
+      svg {
+        transition: ${props => props.theme.defaultTransition};
+        fill: #000000d6;
+      }
+      &:hover {
+        svg {
+          fill: ${props => props.theme.magenta};
+        }
+      }
+    }
   }
   #about {
     position: absolute;
@@ -65,7 +76,7 @@ const About = () => {
         <ButtonWrapper>
           <a href={resumePdf} target="blank">
             <StyledButton outline>
-              <PDFIcon fill="#000" /> View Résumé
+              <PDFIcon size={20} /> View Résumé
             </StyledButton>
           </a>
         </ButtonWrapper>
