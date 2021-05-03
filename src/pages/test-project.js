@@ -3,8 +3,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const TestProjectPage = () => {
-  const nextProject = getNextProject(location.pathname);
+const TestProjectPage = ({ location }) => {
+  // const nextProject = getNextProject(location.pathname);
   return (
     <Layout>
       <SEO title="Test Project" />
