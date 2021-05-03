@@ -57,24 +57,15 @@ const CobLife = ({ location }) => {
           </p>
         </section>
         <section>
-          {/* <h3>Static Comps</h3> */}
           <div className="project__comp">
             <aside>
               <h4>Landing Page</h4>
-              {/* <p>
-                Easily reference your recipes or discover new recipes submitted
-                by others.
-              </p> */}
             </aside>
             <CobLifeImage01 />
           </div>
           <div className="project__comp">
             <aside>
               <h4>Why Cob?</h4>
-              {/* <p>
-                Easily reference your recipes or discover new recipes submitted
-                by others.
-              </p> */}
             </aside>
             <CobLifeImage02 />
           </div>
