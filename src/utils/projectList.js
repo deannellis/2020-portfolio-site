@@ -36,11 +36,16 @@ export const projectList = [
     title: "In-Store Publisher Prototype",
     image: ispCover,
   },
+  {
+    route: "/test-project",
+    title: "Test Project",
+    image: ispCover,
+  },
 ];
 
-export const getNextProject = pathName => {
+export const getNextProject = (pathName) => {
   const currentIndex = projectList.findIndex(
-    project => project.route === pathName
+    (project) => project.route === pathName
   );
   if (currentIndex + 1 === projectList.length) {
     return projectList[0];
