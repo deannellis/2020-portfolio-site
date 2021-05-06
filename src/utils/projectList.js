@@ -36,11 +36,6 @@ export const projectList = [
     title: "In-Store Publisher Prototype",
     image: ispCover,
   },
-  {
-    route: "/test-project",
-    title: "Test Project",
-    image: ispCover,
-  },
 ];
 
 export const getNextProject = (pathName) => {
