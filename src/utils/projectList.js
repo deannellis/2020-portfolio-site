@@ -4,12 +4,18 @@ import kineticTypeCover from "../images/kineticType_Cover.jpg";
 import diceRollerCover from "../images/diceRoller_Cover.png";
 import cobLifeCover from "../images/CobLife_Cover.jpg";
 import ispCover from "../images/ISP_Cover.jpg";
+import kamiCover from "../images/Kami_Cover.png";
 
 export const projectList = [
   {
     route: "/flext",
     image: flextCover,
     title: "flext",
+  },
+  {
+    route: "/kami",
+    title: "kami",
+    image: kamiCover,
   },
   {
     route: "/gourmand",
