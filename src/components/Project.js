@@ -30,6 +30,7 @@ const getButtonIcon = (icon) => {
 const Project = ({
   title,
   skills,
+  details,
   buttons,
   background,
   children,
@@ -43,6 +44,7 @@ const Project = ({
         <section className="project-hero">
           <h1>{title}</h1>
           <h5>{skills}</h5>
+          {!!details && <div className="project-hero__details">{details}</div>}
           <div className="project-hero__buttons">
             {buttons.map(({ href, icon, label }) => (
               <a href={href} target="blank">

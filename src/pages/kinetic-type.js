@@ -25,6 +25,7 @@ const KineticType = ({ location }) => {
         skills="Motion Design"
         buttons={[]}
         technologies={projectTechnologies}
+        details="Motion Design Overview | 2012"
         background={
           <p>
             This kinetic typography animation samples audio from the film{" "}
