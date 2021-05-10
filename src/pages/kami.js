@@ -8,6 +8,7 @@ import {
   KamiImage02,
   KamiImage03,
 } from "../components/image-sharp/KamiImages";
+import kamiGif from "../gifs/kami.gif";
 
 const Kami = ({ location }) => {
   const projectButtons = [
@@ -110,6 +111,14 @@ const Kami = ({ location }) => {
             </p>
           </aside>
           <KamiImage03 />
+        </div>
+        <div className="project__comp">
+          <aside>
+            <h4>Landing Page Animation</h4>
+          </aside>
+          <div className="comp--mobile">
+            <img src={kamiGif} alt="kami intro animation" />
+          </div>
         </div>
       </Project>
     </Layout>
