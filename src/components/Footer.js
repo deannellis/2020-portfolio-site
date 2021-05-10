@@ -10,11 +10,11 @@ const FooterWrapper = styled.footer`
   background-color: #efefef;
   display: flex;
   align-items: center;
-  box-shadow: ${props => props.theme.footerShadow};
+  box-shadow: ${(props) => props.theme.footerShadow};
   .footer__main {
     flex-grow: 1;
     text-align: left;
-    @media (${props => props.theme.tabletLandscapeUp}) {
+    @media (${(props) => props.theme.tabletLandscapeUp}) {
       text-align: center;
     }
   }
@@ -27,9 +27,9 @@ const FooterWrapper = styled.footer`
       fill: black;
       transition: all 0.4s;
       margin: 2px 2px 2px 18px;
-      transition-timing-function: ${props => props.theme.popInTrans};
+      transition-timing-function: ${(props) => props.theme.popInTrans};
       &:hover {
-        fill: ${props => props.theme.magenta};
+        fill: ${(props) => props.theme.magenta};
         width: 40px;
         margin: 0 0 0 16px;
         padding: 0;
@@ -60,6 +60,11 @@ const Footer = () => {
               fillRule="evenodd"
             />
             <path d="M97 367.56c-.56 1.27-2.57 1.65-4.39.78s-2.89-2.57-2.29-3.85 2.55-1.67 4.4-.79 2.92 2.58 2.28 3.86zm-3.15-2.34M107.33 379.13c-1.22 1.13-3.61.6-5.23-1.19s-2-4.17-.75-5.32 3.58-.6 5.25 1.19 2 4.17.73 5.32zm-2.44-2.63M117.42 393.87c-1.56 1.09-4.13.07-5.72-2.21s-1.57-5 0-6.1 4.12-.11 5.72 2.15 1.57 5 0 6.16zm0 0M131.25 408.11c-1.4 1.55-4.39 1.13-6.58-1s-2.86-5-1.45-6.54 4.43-1.11 6.63 1 2.9 5 1.4 6.54zm0 0M150.33 416.38c-.62 2-3.5 2.92-6.4 2.07s-4.79-3.23-4.2-5.25 3.49-3 6.41-2.06 4.79 3.2 4.19 5.24zm0 0M171.28 417.92c.07 2.11-2.39 3.86-5.43 3.9s-5.54-1.64-5.57-3.72 2.4-3.86 5.46-3.92 5.54 1.64 5.54 3.74zm0 0M190.78 414.6c.36 2.06-1.76 4.17-4.78 4.74s-5.72-.73-6.1-2.77 1.78-4.23 4.75-4.78 5.74.72 6.13 2.81zm0 0" />
+          </svg>
+        </a>
+        <a href="https://twitter.com/dean_nellis" target="blank">
+          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M256 0C114.62 0 0 114.62 0 256s114.62 256 256 256 256-114.62 256-256S397.38 0 256 0zm129.41 205.76C389.31 292 325 388 211.24 388a173.36 173.36 0 01-93.91-27.54A123.26 123.26 0 00208 335.13a61.43 61.43 0 01-57.26-42.56 61.46 61.46 0 0027.69-1.05c-29.46-5.93-49.81-32.47-49.15-60.86a61.23 61.23 0 0027.76 7.65 61.36 61.36 0 01-19-81.81 173.92 173.92 0 00126.3 64 61.32 61.32 0 01104.42-55.89 122.1 122.1 0 0038.91-14.87 61.53 61.53 0 01-26.94 33.9A122.08 122.08 0 00416 174a122.84 122.84 0 01-30.59 31.76z" />
           </svg>
         </a>
       </div>
