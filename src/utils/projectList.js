@@ -1,15 +1,27 @@
 import flextCover from "../images/flext_screencap_01.png";
 import gourmandCover from "../images/Gourmand_Cover.png";
-import kineticTypeCover from "../images/kineticType_Cover.jpg";
+import kineticTypeCover from "../images/kineticType_Cover.png";
 import diceRollerCover from "../images/diceRoller_Cover.png";
 import cobLifeCover from "../images/CobLife_Cover.jpg";
 import ispCover from "../images/ISP_Cover.jpg";
+import kamiCover from "../images/Kami_Cover.png";
+import craftPixelCover from "../images/CraftPixel_Cover.png";
 
 export const projectList = [
   {
     route: "/flext",
     image: flextCover,
     title: "flext",
+  },
+  {
+    route: "/kami",
+    title: "kami",
+    image: kamiCover,
+  },
+  {
+    route: "/craft-pixel",
+    title: "Craft Pixel",
+    image: craftPixelCover,
   },
   {
     route: "/gourmand",
