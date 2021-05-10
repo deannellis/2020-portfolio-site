@@ -4,6 +4,10 @@
   "description": "The portfolio site of designer/front-end developer, Dean Nellis",
   "version": "0.1.0",
   "author": "Dean Nellis <nellisdean@gmail.com>",
+  "engines": {
+    "node": ">=12.13.0",
+    "npm": ">=6.0.0"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "dotenv": "^8.2.0",
