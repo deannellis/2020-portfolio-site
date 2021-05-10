@@ -57,6 +57,7 @@ const Gourmand = ({ location }) => {
         location={location}
         title="Gourmand: where recipes live"
         skills="Design / UI/UX / Full Stack Development"
+        details="Personal Development | 2019"
         buttons={projectButtons}
         technologies={projectTechnologies}
         background={

@@ -49,8 +49,9 @@ const CraftPixel = ({ location }) => {
       <SEO title="Craft Pixel" />
       <Project
         title="Craft Pixel"
-        location={location}
         skills="Front-end Development / Branding"
+        details="Freelance | 2021"
+        location={location}
         buttons={projectButtons}
         technologies={projectTechnologies}
         background={

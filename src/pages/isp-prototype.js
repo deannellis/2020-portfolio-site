@@ -48,6 +48,7 @@ const CobLife = ({ location }) => {
         location={location}
         title="In-Store Publisher Prototype"
         skills="Front-End Development / Visual Design"
+        details="Lexmark | 2019"
         buttons={projectButtons}
         technologies={projectTechnologies}
         background={
