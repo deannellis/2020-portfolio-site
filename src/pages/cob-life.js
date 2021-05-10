@@ -46,6 +46,7 @@ const CobLife = ({ location }) => {
       <Project
         title="Cob Life"
         skills="Web Design / Research / Branding"
+        details="Capstone Project | 2016"
         location={location}
         buttons={projectButtons}
         background={

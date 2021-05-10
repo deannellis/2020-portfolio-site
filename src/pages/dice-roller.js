@@ -45,6 +45,7 @@ const DiceRoller = ({ location }) => {
         location={location}
         title="Dice Roller: A virtual set of polyhedral dice"
         skills="DESIGN / FRONT-END DEVELOPMENT"
+        details="Personal Development | 2018"
         buttons={projectButtons}
         technologies={projectTechnologies}
         background={

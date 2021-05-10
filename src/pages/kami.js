@@ -61,6 +61,7 @@ const Kami = ({ location }) => {
       <Project
         title="Kami"
         skills="front-end development"
+        details="Personal Development | 2021"
         location={location}
         buttons={projectButtons}
         technologies={projectTechnologies}
@@ -75,8 +76,7 @@ const Kami = ({ location }) => {
                 To capture UI patterns I have implemeneted many times and
                 provide a base design system that is easily adpated
               </li>
-              <li></li>
-              To try new technologies &amp; best practices
+              <li>To try new technologies &amp; best practices</li>
             </ul>
           </>
         }

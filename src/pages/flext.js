@@ -59,8 +59,9 @@ const Flext = ({ location }) => {
       <SEO title="Flext" />
       <Project
         title="Flext: a weight lifting companion app"
-        location={location}
         skills="Design / UI/UX / Front-End Development"
+        details="Personal Development | 2020"
+        location={location}
         buttons={projectButtons}
         technologies={projectTechnologies}
         background={
