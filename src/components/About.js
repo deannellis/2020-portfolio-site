@@ -12,15 +12,16 @@ const AboutWrapper = styled.div`
   position: relative;
   section {
     width: 100%;
-    padding: 0 ${props => props.theme.lSize} ${props => props.theme.lSize};
-    @media (${props => props.theme.tabletLandscapeUp}) {
-      padding: ${props => props.theme.mSize} 0 ${props => props.theme.xlSize};
+    padding: 0 ${(props) => props.theme.lSize} ${(props) => props.theme.lSize};
+    @media (${(props) => props.theme.tabletLandscapeUp}) {
+      padding: ${(props) => props.theme.mSize} 0
+        ${(props) => props.theme.xlSize};
 
       width: 70vw;
     }
     p {
       width: 100%;
-      @media (${props => props.theme.tabletLandscapeUp}) {
+      @media (${(props) => props.theme.tabletLandscapeUp}) {
         width: 88%;
       }
     }
@@ -32,12 +33,12 @@ const AboutWrapper = styled.div`
     }
     button {
       svg {
-        transition: ${props => props.theme.defaultTransition};
+        transition: ${(props) => props.theme.defaultTransition};
         fill: #000000d6;
       }
       &:hover {
         svg {
-          fill: ${props => props.theme.magenta};
+          fill: ${(props) => props.theme.magenta};
         }
       }
     }
@@ -57,9 +58,8 @@ const About = () => {
         <p>
           Hi, I'm Dean. I have worn many hats over the years: UX researcher, UI
           designer, and graphic designer. Currently I work at{" "}
-          <a href="https://www.lexmark.com/">Lexmark</a> as a visual designer,
-          creating attractive and intuitive digital experiences for our
-          customers.
+          <a href="https://dotdash.io/">Dot Dash</a> as a Front-end Developer,
+          creating attractive and intuitive digital experiences for our clients.
         </p>
         <p>
           I graduated from the University of Cincinnati College of Design,
